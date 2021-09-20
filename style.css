@@ -36,21 +36,25 @@ li {
 
 .course {
   margin-top: 1%;
-  padding: 1%;
+  padding: 1% 0 1% 0;
   display: grid;
   grid-template-columns: 1fr 5fr 2fr;
   background-color: dbdbdb;
-
 }
 
 .code {
   text-align: center;
+  color: black;
+}
+
+.prof {
+  color: black;
 }
 
 .description{
   background-color: #f2f2f2;
   margin: 0 1% 0 1%;
-  padding: 1em;
+  padding-top: 1em;
 
   display: grid;
   grid-template-columns: 50% 50%;
@@ -78,10 +82,6 @@ li {
   grid-column: 1/3
 }
 
-.whitebg {
-  background-color: white
-}
-
 .course {
 
   font-weight: bold;
@@ -90,9 +90,11 @@ li {
 .showdesc {
   color: black;
   font-weight: bold;
+  text-align: center;
 }
 
 .showdesc:hover {
   color: black;
   font-weight: bold;
+    text-align: center;
 }
