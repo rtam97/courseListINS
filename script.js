@@ -16,7 +16,9 @@ function makeList(listData,parentDiv,titleName) {
   for (k = 0; k < nrListItems; ++k) {
     // create an item for each one
     listItem = document.createElement('li');
-
+    // if (k % 2 == 0) {
+    //   listItem.classList.add('whitebg')
+    // }
     // Add the item text
     listItem.innerHTML = listData[k];
 
@@ -51,7 +53,7 @@ function createCourseList(courseData) {
    listContainer.appendChild(courseElement);
 
    for (i = 0; i < numberOfListItems; ++i) {
-
+     // ------ HERE I WILL ADD CHECK FOR FILTERS
      console.log(courseData[i].code)
      // create course
      courseItem = document.createElement('div');
@@ -106,6 +108,8 @@ function createCourseList(courseData) {
            courseDesc.setAttribute('id',courseData[i].code+'description')
            courseDescContainer.appendChild(courseDesc)
 
+
+          // TITLES
            title = document.createElement('p');
            title.classList.add('desctitle')
            title.innerHTML = 'Techniques'
@@ -116,10 +120,55 @@ function createCourseList(courseData) {
            title2.innerHTML = 'Topics'
            courseDesc.appendChild(title2)
 
+           // Techniques
            makeList(courseData[i].techniques,courseData[i].code+'description')
 
-
+           // Topics
            makeList(courseData[i].topics,courseData[i].code+'description')
+
+           a = document.createElement('p');
+           a.classList.add('desctitle')
+           a.innerHTML = 'Model Organism(s):'
+           courseDesc.appendChild(a)
+
+           b = document.createElement('p');
+           b.innerHTML = courseData[i].models
+           courseDesc.appendChild(b)
+
+           c = document.createElement('p');
+           c.classList.add('desctitle')
+           c.innerHTML = 'Location'
+           courseDesc.appendChild(c)
+
+           d = document.createElement('p');
+           d.innerHTML = courseData[i].location
+           courseDesc.appendChild(d)
+
+           a = document.createElement('p');
+           a.classList.add('desctitle')
+           a.innerHTML = 'Semester'
+           courseDesc.appendChild(a)
+
+           b = document.createElement('p');
+           b.innerHTML = courseData[i].semester
+           courseDesc.appendChild(b)
+
+           for (var j = 0; j < courseData[i].links.length; j++) {
+             link = document.createElement('a')
+             if (courseData[i].links.length == 1) {
+               link.classList.add('desclinksingle')
+             }
+             link.setAttribute('target',"_blank")
+             link.setAttribute('href',courseData[i].links[j])
+             if (j==0) {
+               link.innerHTML = 'ICNF Page'
+               link.classList.add('desclink')
+             } else {
+               link.innerHTML = 'Lab Page'
+             }
+
+             courseDesc.appendChild(link)
+           }
 
          }
 
@@ -143,7 +192,7 @@ let courses = [
       'Circadian rhythms in mammalian neurons'
     ],
     "models":[
-      'Murine cell culture'
+      'Mice cell culture'
     ],
     "location":"Niederrad",
     "semester":['Summer'],
