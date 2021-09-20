@@ -146,8 +146,8 @@ function createCourseList(courseData) {
            makeList(courseData[i].topics,courseData[i].code+'description')
 
            a = document.createElement('p');
-           a.classList.add('desctitle')
-           a.innerHTML = 'Model Organism(s):'
+           a.classList.add('desctitles')
+           a.innerHTML = 'Model Organism(s)'
            courseDesc.appendChild(a)
 
            b = document.createElement('p');
@@ -155,7 +155,7 @@ function createCourseList(courseData) {
            courseDesc.appendChild(b)
 
            c = document.createElement('p');
-           c.classList.add('desctitle')
+           c.classList.add('desctitles')
            c.innerHTML = 'Location'
            courseDesc.appendChild(c)
 
@@ -164,7 +164,7 @@ function createCourseList(courseData) {
            courseDesc.appendChild(d)
 
            a = document.createElement('p');
-           a.classList.add('desctitle')
+           a.classList.add('desctitles')
            a.innerHTML = 'Semester'
            courseDesc.appendChild(a)
 
@@ -172,22 +172,26 @@ function createCourseList(courseData) {
            b.innerHTML = courseData[i].semester
            courseDesc.appendChild(b)
 
-           for (var j = 0; j < courseData[i].links.length; j++) {
-             link = document.createElement('a')
-             if (courseData[i].links.length == 1) {
-               link.classList.add('desclinksingle')
-             }
-             link.setAttribute('target',"_blank")
-             link.setAttribute('href',courseData[i].links[j])
-             if (j==0) {
-               link.innerHTML = 'ICNF Page'
-               link.classList.add('desclink')
-             } else {
-               link.innerHTML = 'Lab Page'
-             }
+           a = document.createElement('p');
+           a.classList.add('desctitles')
+           a.innerHTML = 'Lab page'
+           courseDesc.appendChild(a)
 
+
+           if (courseData[i].links.length == 2) {
+             link = document.createElement('a');
+             link.setAttribute('target',"_blank")
+             link.setAttribute('href',courseData[i].links[1])
+             link.innerHTML = 'Link'
              courseDesc.appendChild(link)
+           } else {
+             b = document.createElement('p');
+             b.innerHTML = '----------------'
+             courseDesc.appendChild(b)
            }
+
+
+
 
          }
 

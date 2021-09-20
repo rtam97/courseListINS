@@ -72,6 +72,11 @@ li {
   text-align: center;
   font-weight: bold;
 }
+.desctitles {
+  padding-right: 1em;
+  text-align: right;
+  font-weight: bold;
+}
 
 .desclink {
   text-align: center;
