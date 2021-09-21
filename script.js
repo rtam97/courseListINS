@@ -85,34 +85,6 @@ function createCourseList(courseData) {
        // Add course to document
        courseElement.appendChild(courseItem);
 
-
-       if (courseData[i].code.includes('A')) {
-         x = document.getElementById(courseData[i].code)
-         x.style.backgroundColor = '#ffdddd'
-         y = document.getElementById('code'+courseData[i].code)
-         y.style.color = '#a80000'
-         z = document.getElementById(courseData[i].coordinators)
-         z.style.color = '#a80000'
-
-
-       } else if (courseData[i].code.includes('B')) {
-         x = document.getElementById(courseData[i].code)
-         x.style.backgroundColor = '#ddebff'
-         y = document.getElementById('code'+courseData[i].code)
-         y.style.color = '#00337a'
-         z = document.getElementById(courseData[i].coordinators)
-         z.style.color = '#00337a'
-
-
-
-       } else if (courseData[i].code.includes('C')) {
-         x = document.getElementById(courseData[i].code)
-         x.style.backgroundColor = 'green'
-       } else if (courseData[i].code.includes('D')) {
-         x = document.getElementById(courseData[i].code)
-         x.style.backgroundColor = 'orange'
-       }
-
            // Add COURSE DESCRIPTION item
            {
              // Collapse container
@@ -195,12 +167,51 @@ function createCourseList(courseData) {
 
          }
 
+         // Change colors depending on course type
+         if (courseData[i].code.includes('A')) {
+           x = document.getElementById(courseData[i].code)
+           x.style.backgroundColor = '#ffdddd'
+           y = document.getElementById('code'+courseData[i].code)
+           y.style.color = '#a80000'
+           z = document.getElementById(courseData[i].coordinators)
+           z.style.color = '#a80000'
+           k = document.getElementById(courseData[i].code+'description')
+           k.style.backgroundColor = '#fff0f0'
 
+         } else if (courseData[i].code.includes('B')) {
+           x = document.getElementById(courseData[i].code)
+           x.style.backgroundColor = '#ddebff'
+           y = document.getElementById('code'+courseData[i].code)
+           y.style.color = '#00337a'
+           z = document.getElementById(courseData[i].coordinators)
+           z.style.color = '#00337a'
+           k = document.getElementById(courseData[i].code+'description')
+           k.style.backgroundColor = '#ebf3ff'
+
+         } else if (courseData[i].code.includes('C')) {
+           x = document.getElementById(courseData[i].code)
+           x.style.backgroundColor = '#e3e3e3';//'#ebebeb'
+           y = document.getElementById('code'+courseData[i].code)
+           y.style.color = '#696969';//'#adadad'
+           z = document.getElementById(courseData[i].coordinators)
+           z.style.color = '#696969';//'#adadad'
+
+         } else if (courseData[i].code.includes('D')) {
+           x = document.getElementById(courseData[i].code)
+           x.style.backgroundColor = '#ffd591'
+           y = document.getElementById('code'+courseData[i].code)
+           y.style.color = '#e08b00'
+           z = document.getElementById(courseData[i].coordinators)
+           z.style.color = '#e08b00';//'#adadad'
+           k = document.getElementById(courseData[i].code+'description')
+           k.style.backgroundColor = '#ffe8c4'
+         }
    }
  }
 
 
 let courses = [
+  // A5
   {
     "code":"A5",
     "name":"Clock Mechanisms in Mammalian Neurons and Neuroendocrine Cells",
@@ -222,6 +233,7 @@ let courses = [
     "links":['https://www.izn-frankfurt.de/en/mitglied/maronde/']
   },
 
+  // A7
   {
     "code":"A7",
     "name":"Neurobiology of the Nematode Caenorhabditis elegans",
@@ -250,6 +262,7 @@ let courses = [
     ]
   },
 
+  // A8
   {
     "code":"A8",
     "name":"Neuropharmacology",
@@ -275,6 +288,7 @@ let courses = [
     ]
   },
 
+  // A9
   {
     "code":"A9",
     "name":"Cellular Physiology of Dopaminergic Neurons",
@@ -299,6 +313,7 @@ let courses = [
     ]
   },
 
+  // A10
   {
     "code":"A10",
     "name":"Neurophysiology and Behaviour",
@@ -330,6 +345,7 @@ let courses = [
     ]
   },
 
+  // A12
   {
     "code":"A12",
     "name":"The Neuro-Vascular Interface",
@@ -358,6 +374,7 @@ let courses = [
     ]
   },
 
+  // A14
   {
     "code":"A14",
     "name":"Embryonic and Adult Neurogenesis ",
@@ -386,6 +403,7 @@ let courses = [
     ]
   },
 
+  // A15
   {
     "code":"A15",
     "name":"Electrophysiological recordings in freely behaving animals",
@@ -411,6 +429,7 @@ let courses = [
     ]
   },
 
+  // A17
   {
     "code":"A17",
     "name":"Auditory Function and Dysfunction: Behavior and Physiology",
@@ -439,7 +458,7 @@ let courses = [
     ]
   },
 
-
+  // A18
   {
     "code":"A18",
     "name":"Information Processing in the Central Auditory System",
@@ -467,6 +486,7 @@ let courses = [
     ]
   },
 
+  // A19
   {
     "code":"A19",
     "name":"Neuronal basis of acoustic communication in mammals",
@@ -495,6 +515,7 @@ let courses = [
     ]
   },
 
+  // A21
   {
     "code":"A21",
     "name":"Cellular, molecular and systemic Neurobiology in mouse and zebrafish",
@@ -527,6 +548,7 @@ let courses = [
     ]
   },
 
+  // A22
   {
     "code":"A22",
     "name":"Optogenetics and calcium recordings in freely behaving animals",
@@ -554,7 +576,7 @@ let courses = [
     ]
   },
 
-
+  // A23
   {
     "code":"A23",
     "name":"Cellular and molecular mechanisms in neurovascular disorders",
@@ -583,6 +605,7 @@ let courses = [
     ]
   },
 
+  // A24
   {
     "code":"A24",
     "name":"Deciphering brain activity during natural behaviour in real time",
@@ -611,6 +634,7 @@ let courses = [
     ]
   },
 
+  // B1
   {
     "code":"B1",
     "name":"Ageing and Neurodegeneration",
@@ -637,6 +661,7 @@ let courses = [
     ]
   },
 
+  // B2
   {
     "code":"B2",
     "name":"Physiology and Pharmacology of Pain",
@@ -665,6 +690,7 @@ let courses = [
     ]
   },
 
+  // B4
   {
     "code":"B4",
     "name":"Plasticity in Hippocampus : Morphology, Physiology, and Clinical Relevance",
@@ -695,6 +721,7 @@ let courses = [
     ]
   },
 
+  // B6
   {
     "code":"B6",
     "name":"Brain Damage and Neuroprotection",
@@ -722,6 +749,7 @@ let courses = [
     ]
   },
 
+  // B7
   {
     "code":"B7",
     "name":"Clinical Paediatric Neurology",
@@ -752,6 +780,7 @@ let courses = [
     ]
   },
 
+  // B8
   {
     "code":"B8",
     "name":"Clinical Neuroimaging",
@@ -776,6 +805,7 @@ let courses = [
     ]
   },
 
+  // B9
   {
     "code":"B9",
     "name":"Clinical Auditory Neuroscience",
@@ -805,6 +835,7 @@ let courses = [
     ]
   },
 
+  // B10
   {
     "code":"B10",
     "name":"Experimental and Translational Psychiatry",
@@ -835,6 +866,7 @@ let courses = [
     ]
   },
 
+  // B11
   {
     "code":"B11",
     "name":"Neurobiological human cell models",
@@ -863,6 +895,276 @@ let courses = [
     ]
   },
 
+  // C3
+  {
+    "code":"C3",
+    "name":"Modelling and Simulation",
+    "coordinators":["Prof. Gabriel Wittum"],
+    "techniques":[
+        'Vector analysis (multivariable calculus)',
+        'Mathematical modeling',
+        'Simulation techniques for ODEs and PDEs'
+      ],
+
+    "topics":[
+      'Scientific computing and maths'
+    ],
+    "models":[
+      'Computer'
+    ],
+    "location":"Westend",
+    "semester":['Summer'],
+    "links":[
+      'https://gcsc.uni-frankfurt.de/simulation-and-modelling'
+    ]
+  },
+
+  // C4
+  {
+    "code":"C4",
+    "name":"Virtual Hippocampus : Introduction to Computational Neuroscience",
+    "coordinators":["Prof. Dr. Peter Jedlicka"],
+    "techniques":['Computational modeling',
+        'Synaptic models',
+        'Dendritic models',
+        'Single-neuron models',
+        'Network models',
+        'NEURON package',
+        'Programming (Python)'
+      ],
+
+    "topics":[
+      'Modeling of hippocampal cells and networks',
+      'Memory and learning',
+      'Synaptic plasticity',
+      'Molecular/cellular underpinnings of the role of dentate gyrus role in memory',
+      'GABAergic inhibition on dendritic computation'
+    ],
+
+    "models":[
+      'Computer'
+    ],
+    "location":"Niederrad",
+    "semester":['Winter','Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/jedlicka/',
+      'https://sites.google.com/site/peterjedlicka/'
+    ]
+  },
+
+  // C8
+  {
+    "code":"C8",
+    "name":"Systems Neuroscience : Sensorimotor and cognitive networks",
+    "coordinators":["PD Dr. Christian Kell"],
+    "techniques":[
+        'Behavioral experiments',
+        'Electroencephalography (EEG)',
+        'Magnetoencephalography (MEG)',
+        'fMRI',
+        'Data analysis'
+      ],
+
+    "topics":[
+      'Linguistic processing and production in health and disease'
+    ],
+
+    "models":[
+      'Humans (Homo sapiens)'
+    ],
+    "location":"Niederrad",
+    "semester":['Winter','Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/kell/',
+      'http://www.brainclocks.com/interests.php'
+    ]
+  },
+
+  // C10
+  {
+    "code":"C10",
+    "name":"Computational neuroanatomy : quantitative analysis and modeling",
+    "coordinators":["Dr. Hermann Cuntz"],
+    "techniques":[
+        'Image data analysis (microscopy data)',
+        'Computational modeling',
+        'Morphological models',
+        'Biophysical models',
+        'Programming (Matlab)'
+      ],
+
+    "topics":[
+      'Wiring principles of neuronal circuits',
+      'Dendritic structure and computations',
+      'Morphological modeling'
+    ],
+
+    "models":[
+      'Computer'
+    ],
+    "location":"Niederrad",
+    "semester":['Winter','Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/cuntz/',
+      'https://www.treestoolbox.org/hermann/'
+    ]
+  },
+
+  // C11
+  {
+    "code":"C11",
+    "name":"Computational Modeling of Neuronal Plasticity",
+    "coordinators":["Prof. Dr. Jochen Triesch"],
+    "techniques":[
+        'Computational modeling',
+        'Neural networks',
+        'Plasticity rules',
+        'Programming (Python/Matlab/Java)'
+      ],
+
+    "topics":[
+      'Artificial and natural neural networks',
+      'Plasticity mechanisms and rules',
+      'Role of plasticity in network dynamics and learning'
+    ],
+
+    "models":[
+      'Computer'
+    ],
+    "location":"Riedberg",
+    "semester":['Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/triesch/',
+      'https://www.fias.science/en/neuroscience/research-groups/jochen-triesch/'
+    ]
+  },
+
+  // C12
+  {
+    "code":"C12",
+    "name":"Computational Neural Dynamics",
+    "coordinators":["Dr. Tatjana Tchumatchenko"],
+    "techniques":[
+        'Computational modeling',
+        'Mathematical modeling',
+        'Derive and formulate mathematical models',
+        'Solve differential equations analytically and numerically',
+        'Programming'
+      ],
+
+    "topics":[
+      'Spiking dynamics & connectivity of single neurons',
+      'Collective phenomena of neuronal networks'
+    ],
+
+    "models":[
+      'Computer'
+    ],
+    "location":"Riedberg",
+    "semester":['Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/tchumatchenko/',
+      'https://brain.mpg.de/tchumatchenko'
+    ]
+  },
+
+  // C13
+  {
+    "code":"C13",
+    "name":"Models for Neural Circuit Development",
+    "coordinators":["Dr. Julijana Gjorgjieva"],
+    "techniques":[
+        'Computational modeling',
+        'Programming',
+        'Network models',
+        'Calcium imaging (Data analysis)',
+        'Electrophysiology (Data analysis)'
+      ],
+
+    "topics":[
+      'Visual cortex plasticity',
+      'Sensory map and receptive field formation in visual cortex',
+      'Topography, ocular dominance columns, direction selectivity',
+      'Synaptic plasticity in biophysical neurons'
+    ],
+
+    "models":[
+      'Computer'
+    ],
+    "location":"Riedberg",
+    "semester":['Winter','Summer'],
+    "links":[
+      'https://brain.mpg.de/gjor',
+      'https://brain.mpg.de/gjor'
+    ]
+  },
+
+  // C14
+  {
+    "code":"C14",
+    "name":"Cognitive Psychology : Attention, Perception & Memory",
+    "coordinators":["Prof. Dr. Melissa Le-Hoa Vo"],
+    "techniques":[
+        'Study design',
+        'Programming',
+        'Behavioral data analysis',
+        'Psychophysics ',
+        'Electroencephalography (EEG)',
+        'Data analysis (EEG)',
+        'Eye tracking'
+      ],
+
+    "topics":[
+      'Visual attention',
+      'Scene perception',
+      'Memory'
+    ],
+
+    "models":[
+      'Computer'
+    ],
+    "location":"Westend",
+    "semester":['Winter'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/vo/',
+      'https://www.scenegrammarlab.com/research/'
+    ]
+  },
+
+  // C14
+  {
+    "code":"D1",
+    "name":"Behavioral Biology in Zoos",
+    "coordinators":["Prof. Dr. Paul Dierkes"],
+    "techniques":[
+        'Zoology theory',
+        'Zoo internship',
+        'Behavioral as well as fundamental research',
+        'Imaging techniques'
+      ],
+
+    "topics":[
+      'Historical development of zoos',
+      'Zoos and conservation',
+      'Population biology',
+      'Breeding programs at zoo',
+      'Animal husbandry',
+      'Veterinary',
+      'Organization and structure development of zoos',
+      'Enclosure design and planning',
+      'Education at the zoo'
+    ],
+
+    "models":[
+      'Animals'
+    ],
+    "location":"Riedberg",
+    "semester":['Summer'],
+    "links":[
+      'https://www.bio.uni-frankfurt.de/43969445/abtdierkes',
+      'https://www.bio.uni-frankfurt.de/43969445/abtdierkes'
+    ]
+  },
 
 ]
 
