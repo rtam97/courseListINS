@@ -1,0 +1,950 @@
+
+
+courses = [
+
+  {
+    "code":"A5",
+    "name":"Clock Mechanisms in Mammalian Neurons and Neuroendocrine Cells",
+    "coordinators":["Prof. Eric Maronde"],
+    "techniques":[
+      'Molecular biology',
+      'Biochemistry',
+      'Cell culture',
+      'Immunohistochemistry'
+    ],
+    "topics":[
+      'Circadian rhythms in mammalian neurons'
+    ],
+    "models":[
+      'Neuronal cell culture (Mus musculus)'
+    ],
+    "location":"Niederrad",
+    "semester":['Summer'],
+    "links":['https://www.izn-frankfurt.de/en/mitglied/maronde/']
+  },
+
+  {
+    "code":"A7",
+    "name":"Neurobiology of the Nematode Caenorhabditis elegans",
+    "coordinators":["Prof. Alexander Gottschalk"],
+    "techniques":[
+      'Genetic techniques',
+      'Behavioral experiments',
+      'Pharmacology',
+      'Molecular biology',
+      'Optogenetics (demo)',
+      'Electrophysiology (demo)'
+    ],
+    "topics":[
+      'Food-motivated behavior',
+      'Neuromuscolar control',
+      'Noiciception'
+    ],
+    "models":[
+      'Nematode worm (Caenorhabditis elegans)'
+    ],
+    "location":"Riedberg",
+    "semester":['Winter','Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/gottschalk/',
+      'https://www.bmls.de/Cellular_and_Molecular_Neurobiology/projects.html',
+    ]
+  },
+
+  {
+    "code":"A8",
+    "name":"Neuropharmacology",
+    "coordinators":["Prof. Jochen Klein"],
+    "techniques":[
+        'Pharmacology',
+        'Microdialysis (in vivo)',
+        'HPLC',
+        'Biochemistry'
+      ],
+    "topics":[
+      'Central cholinergic system in Alzheimer\'s disease',
+      'Metabolism in ischemic and stroke conditions'
+    ],
+    "models":[
+      'Rats (Rattus norvegicus)',
+      'Mice (Mus musculus)'
+    ],
+    "location":"Riedberg",
+    "semester":['Winter','Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/klein/',
+      'https://www.uni-frankfurt.de/57955275/Prof__Dr__Jochen_Klein',
+    ]
+  },
+
+  {
+    "code":"A9",
+    "name":"Cellular Physiology of Dopaminergic Neurons",
+    "coordinators":["Prof. Jochen Roeper"],
+    "techniques":[
+        'Electrophysiology (in vitro)',
+        'Electrophysiology (in vivo)',
+        'Signal processing',
+        'Modeling (Stochastic modeling)',
+        'Immunohistochemistry'
+      ],
+    "topics":[
+      'Basal ganglia dopaminergic neurophysiology & patohysiology',
+      'Parkinson\'s disease, schizophrenia, ADHD'
+    ],
+    "models":[
+      'Mice (Mus musculus)'
+    ],
+    "location":"Niederrad",
+    "semester":['Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/roeper/'
+    ]
+  },
+
+  {
+    "code":"A10",
+    "name":"Neurophysiology and Behaviour",
+    "coordinators":["Prof. Bernd Gruenewald"],
+    "techniques":[
+        'Electrophysiology (in vitro)',
+        'Electrophysiology (in vivo)',
+        'Calcium imaging',
+        'Cell culture',
+        'Neuroanatomy',
+        'Immunohistochemistry',
+        'Microscopy (confocal)',
+        'Behavioral experiments'
+      ],
+    "topics":[
+      'Ion channels and receptors functioning',
+      'Neuromodulation',
+      'Learning behavior',
+      'Olfactory memory formation',
+      'Social behavior of bees'
+    ],
+    "models":[
+      'Honeybees (Apis mellifera)',
+      'Fruit fly (Drosophila melanogaster)'
+    ],
+    "location":"Riedberg",
+    "semester":['Winter','Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/gruenewald/'
+    ]
+  },
+
+  {
+    "code":"A12",
+    "name":"The Neuro-Vascular Interface",
+    "coordinators":["PD Dr. Stefan Liebner"],
+    "techniques":[
+        'Genetic techniques',
+        'Biochemistry',
+        'Cell culture (Primary, isolation from mice)',
+        'Transgenic techniques',
+        'Immunohistochemistry',
+        'Microscopy (confocal, fixed/live-cell)'
+      ],
+    "topics":[
+      'Development of brain vasculature',
+      'Blood-brain-barrier morphogenesis'
+    ],
+    "models":[
+      'Mice (Mus musculus)',
+      'Endothelial cell culture (Mus musculus)'
+    ],
+    "location":"Niederrad",
+    "semester":['Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/liebner/',
+      'http://www.bbbsignaling.de/home.html'
+    ]
+  },
+
+  {
+    "code":"A14",
+    "name":"Embryonic and Adult Neurogenesis ",
+    "coordinators":["Prof. Dorothea Schulte"],
+    "techniques":[
+        'Genetic techniques',
+        'Biochemistry',
+        'Cell culture (Primary, isolation from mice)',
+        'Transgenic techniques',
+        'Immunohistochemistry',
+        'Microscopy (confocal, fixed/live-cell)'
+      ],
+    "topics":[
+      'Neurogenesis principles in vertebrates',
+      'Cell fate specification and differentiation'
+    ],
+    "models":[
+      'Mice embryos (Mus musculus)',
+      'Chicken embryos (Gallus gallus domesticus)'
+    ],
+    "location":"Niederrad",
+    "semester":['Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/schulte/'
+    ]
+  },
+
+  {
+    "code":"A15",
+    "name":"Electrophysiological recordings in freely behaving animals",
+    "coordinators":["Dr. Torfi Sigurdsson"],
+    "techniques":[
+        'Behavioral experiments (spatial working memory)',
+        'Electrophysiology (in vivo)',
+        'Signal processing (Spike and LFP extraction)',
+        'Data analysis'
+      ],
+    "topics":[
+      'Neuronal coordination across brain regions',
+      'Spatial working memory',
+      'Schizophrenia'
+    ],
+    "models":[
+      'Mice (Mus musculus)'
+    ],
+    "location":"Niederrad",
+    "semester":['Winter','Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/sigurdsson/'
+    ]
+  },
+
+  {
+    "code":"A17",
+    "name":"Auditory Function and Dysfunction: Behavior and Physiology",
+    "coordinators":["PD Dr. Bernhard Gaese"],
+    "techniques":[
+        'Animal handling',
+        'Surgery',
+        'Pharmacology',
+        'Behavioral experiments',
+        'Electrophysiology (in vivo)',
+        'Signal processing',
+        'Data analysis'
+      ],
+    "topics":[
+      'Auditory perception',
+      'Auditory disorders (tinnitus, hearing loss)',
+      'Behavioral/pharmachological treatments'
+    ],
+    "models":[
+      'Rats (Rattus norvegicus)',
+      'Gerbil (Meriones unguiculatus)'
+    ],
+    "location":"Riedberg",
+    "semester":['Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/gaese/'
+    ]
+  },
+
+  {
+    "code":"A18",
+    "name":"Information Processing in the Central Auditory System",
+    "coordinators":["PD Dr. Bernhard Gaese"],
+    "techniques":[
+        'Animal handling',
+        'Surgery',
+        'Behavioral experiments',
+        'Electrophysiology (in vivo)',
+        'Signal processing',
+        'Data analysis'
+      ],
+    "topics":[
+      'Auditory perception',
+      'Top-down influences on hearing',
+      'Context-dependent processing of auditory signals'
+    ],
+    "models":[
+      'Rats (Rattus norvegicus)',
+      'Gerbil (Meriones unguiculatus)'
+    ],
+    "location":"Riedberg",
+    "semester":['Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/gaese/'
+    ]
+  },
+
+  {
+    "code":"A19",
+    "name":"Neuronal basis of acoustic communication in mammals",
+    "coordinators":["Dr. Julio Hechavarria",'Prof. Manfred Koessl'],
+    "techniques":[
+        'Bioacoustics',
+        'Animal handling',
+        'Surgery',
+        'Electrophysiology (in vivo)',
+        'Signal processing',
+        'Data analysis',
+        'Programming (Matlab)'
+      ],
+    "topics":[
+      'Auditory perception',
+      'Top-down influences on hearing',
+      'Context-dependent processing of auditory signals'
+    ],
+    "models":[
+      'Bats (Carollia perspicillata)',
+      'Gerbil (Meriones unguiculatus)'
+    ],
+    "location":"Riedberg",
+    "semester":['Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/hechavarria/',
+      'https://www.julio-hechavarria.com/'
+    ]
+  },
+
+  {
+    "code":"A21",
+    "name":"Cellular, molecular and systemic Neurobiology in mouse and zebrafish",
+    "coordinators":["Prof. Amparo Acker-Palmer",'Dr. Bettina Kirchmaier'],
+    "techniques":[
+        'Genetic techniques (mice)',
+        'Immunohistochemistry',
+        'Cell culture',
+        'Microscopy',
+        'Biochemistry',
+        'Genetic techniques (zebrafish)',
+        'Microscopy',
+        'Embryo manipulation',
+        'Behavioral experiments'
+      ],
+
+    "topics":[
+      'Molecular mechanisms of cell-cell communication (ephrin/Eph system)',
+      'Neurovascular interface function and development'
+    ],
+    "models":[
+      'Mice (Mus musculus)',
+      'Zebrafish (Danio rerio)'
+    ],
+    "location":"Riedberg",
+    "semester":['Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/acker-palmer/',
+      'https://sites.google.com/view/neuro-vessel-frankfurt/home'
+    ]
+  },
+
+  {
+    "code":"A22",
+    "name":"Optogenetics and calcium recordings in freely behaving animals",
+    "coordinators":["Dr. Sevil Duvarci"],
+    "techniques":[
+        'Optogenetics',
+        'Calcium recordings (Fiber photometry)',
+        'Behavioral experiments',
+        'Signal processing',
+        'Data analysis'
+      ],
+
+    "topics":[
+      'Midbrain dopamine system',
+      'Fear circuits',
+      'Schizophrenia'
+    ],
+    "models":[
+      'Mice (Mus musculus)'
+    ],
+    "location":"Niederrad",
+    "semester":['Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/duvarci/'
+    ]
+  },
+
+  {
+    "code":"A23",
+    "name":"Cellular and molecular mechanisms in neurovascular disorders",
+    "coordinators":["Dr. Jasmin Hefendehl"],
+    "techniques":[
+        'Genetic techniques (demo)',
+        'Biochemistry',
+        'Immunohistochemistry',
+        'Cell culture',
+        'Microscopy',
+        'Microscopy (in vivo 2-photon, DEMO)',
+        'Image processing',
+        'Data analysis'
+      ],
+
+    "topics":[
+      'Comorbidity of Alzheimer\'s disease and neurovascular diseases'
+    ],
+    "models":[
+      'Mice (Mus musculus)',
+      'Cell culture (Mus musculus)'
+    ],
+    "location":"Riedberg",
+    "semester":['Winter','Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/hefendehl/'
+    ]
+  },
+
+  {
+    "code":"A24",
+    "name":"Deciphering brain activity during natural behaviour in real time",
+    "coordinators":["Dr. Martha Havenith","Dr Marieke Scholvinck"],
+    "techniques":[
+        'Animal handling',
+        'Surgery',
+        'Behavioral experiments',
+        'Electrophysiology (in vivo)',
+        'Psychophysics (humans, VR)',
+        'Programming (Python/Matlab)',
+        'Statistics',
+        'Data analysis'
+      ],
+
+    "topics":[
+      'Parallel/distibuted processing in complex cognition',
+      'Visually-guided decision making',
+      'Learning and attention',
+      'Virtual-Environment-Foraging Task'
+    ],
+    "models":[
+      'Mice (Mus musculus)',
+      'Rhesus macaque (Macaca mulatta)',
+      'Humans (Homo sapiens)'
+    ],
+    "location":"Niederrad",
+    "semester":['Winter','Summer'],
+    "links":[
+      'https://www.esi-frankfurt.de/research/havenith-scholvinck-lab/'
+    ]
+  },
+
+  {
+    "code":"B1",
+    "name":"Ageing and Neurodegeneration",
+    "coordinators":["Prof. Georg Auburger"],
+    "techniques":[
+        'Disease models (in vivo, Parkinson\'s/Ataxia)',
+        'Motor/behavioral analysis',
+        'Disease progression analysis',
+        'Genetic techniques',
+        'Molecular biology',
+        'Histology',
+        'Microscopy'
+      ],
+
+    "topics":[
+      'Parkinson\'s disease',
+      'Ataxia'
+    ],
+    "models":[
+      'Mice (Mus musculus)'
+    ],
+    "location":"Niederrad",
+    "semester":['Winter','Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/auburger/'
+    ]
+  },
+
+  {
+    "code":"B2",
+    "name":"Physiology and Pharmacology of Pain",
+    "coordinators":["Prof. Dr. Ellen Niederberger"],
+    "techniques":[
+      'Disease models (in vivo/in vitro)',
+        'Behavioral experiments (pain)',
+        'Immunohistochemistry',
+        'Cell culture',
+        'Calcium imaging',
+        'Pharmacology',
+        'Molecular biology',
+        'Biochemistry'
+      ],
+
+    "topics":[
+      'Pain and inflammation'
+    ],
+    "models":[
+      'Cell culture (Mus musculus)'
+    ],
+    "location":"Niederrad",
+    "semester":['Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/niederberger/'
+    ]
+  },
+
+  {
+    "code":"B4",
+    "name":"Plasticity in Hippocampus : Morphology, Physiology, and Clinical Relevance",
+    "coordinators":["Prof. Thomas Deller"],
+    "techniques":[
+        'Organotypic slice cultures',
+        'Immunohistochemistry',
+        'Optogenetics',
+        'Microscopy (confocal, fixed/live-cell)',
+        'Electrophysiology (in vitro)',
+        'Pharmacology',
+        'Molecular biology'
+
+      ],
+
+    "topics":[
+      'Hippocampal response to CNS damage',
+      'Hippocampal cell network dynamics',
+      'Molecular basis of hippocampal plasticity'
+    ],
+    "models":[
+      'Organotypic slice culture (Mus musculus)'
+    ],
+    "location":"Niederrad",
+    "semester":['Winter','Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/deller/'
+    ]
+  },
+
+  {
+    "code":"B6",
+    "name":"Brain Damage and Neuroprotection",
+    "coordinators":["Prof. Donat Kogel","Prof. Abdelhaq Rami"],
+    "techniques":[
+        'Cell culture',
+        'Disease models (in vivo/in vitro, ischemia)',
+        'Disease models (in vitro, stress stimuli)',
+        'Microscopy (confocal, fixed/live-cell)',
+        'Pharmacology'
+      ],
+
+    "topics":[
+      'Cell stress and death',
+      'Autophagy in cerebral ischemia'
+    ],
+    "models":[
+      'Rats (Rattus norvegicus)',
+      'Cell culture (Rattus norvegicus)'
+    ],
+    "location":"Niederrad",
+    "semester":['Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/deller/'
+    ]
+  },
+
+  {
+    "code":"B7",
+    "name":"Clinical Paediatric Neurology",
+    "coordinators":["Prof. Dr. Matthias Kieslich"],
+    "techniques":[
+        'Developmental neurological evaluation',
+        'Neuropsychological evaluation',
+        'Electroencephalography (EEG)',
+        'Evoked-potentials',
+        'Neurography',
+        'Sonography'
+      ],
+
+    "topics":[
+      'Epilepsy',
+      'Neuronal metabolism',
+      'Neurooncology',
+      'Neurotraumatology',
+      'Non-accidental child injuries (abuse)',
+      'Ataxia teleaniectasia'
+    ],
+    "models":[
+      'Human children (Homo sapiens)'
+    ],
+    "location":"Niederrad",
+    "semester":['Winter'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/kieslich/'
+    ]
+  },
+
+  {
+    "code":"B8",
+    "name":"Clinical Neuroimaging",
+    "coordinators":["Prof. Dr. Joachim Berkefeld"],
+    "techniques":[
+        'Molecular resonance tomography (MRT)',
+        'Computed tomography (CT)',
+        'Digital subtraction angiography (DSA)',
+      ],
+
+    "topics":[
+      'Neuroanatomy',
+      'Imaging techniques'
+    ],
+    "models":[
+      'Humans (Homo sapiens)'
+    ],
+    "location":"Niederrad",
+    "semester":['Winter','Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/'
+    ]
+  },
+
+  {
+    "code":"B9",
+    "name":"Clinical Auditory Neuroscience",
+    "coordinators":["Prof. Uwe Baumann"],
+    "techniques":[
+        'Psychoacoustics',
+        'Brainstem recording techniques',
+        'Audiometry',
+        'Hearing aids and implants',
+        'Statistics',
+        'Data analysis',
+        'Programming'
+      ],
+
+    "topics":[
+      'Auditory processing and impaired hearing',
+      'hearing aids and cochlear implants',
+      'electrical stimulation of the auditory system'
+    ],
+    "models":[
+      'Humans (Homo sapiens)'
+    ],
+    "location":"Niederrad",
+    "semester":['Winter','Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/baumann/',
+      'https://www.kgu.de/index.php?id=108'
+    ]
+  },
+
+  {
+    "code":"B10",
+    "name":"Experimental and Translational Psychiatry",
+    "coordinators":["Prof. David Slattery"],
+    "techniques":[
+      'Cell culture',
+        'Molecular biology',
+        'Immunohistochemistry',
+        'Histology',
+        'Microscopy',
+        'Pharmacology',
+        'Behavioral experiments',
+        'Neuroimaging (EEG, MEG, fMRI, DEMO)'
+      ],
+
+    "topics":[
+      'Psychiatric disorders in mice models and humans',
+      'Role of neuropeptides in anxiety/affective disorders',
+      'Molecular basis of social anxiety',
+      'Sex-differences in stress disorders'
+    ],
+    "models":[
+      'Mice (Mus musculus)',
+      'Humans (Homo sapiens)'
+    ],
+    "location":"Niederrad",
+    "semester":['Winter','Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/slattery/',
+      'https://www.kgu.de/einrichtungen/kliniken/zentrum-fuer-psychische-gesundheit/psychiatrie-psychosomatik-und-psychotherapie/team/professuren/prof-dr-david-slattery/'
+    ]
+  },
+
+  {
+    "code":"B11",
+    "name":"Neurobiological human cell models",
+    "coordinators":["Prof. Dr. Andreas Chiocchetti"],
+    "techniques":[
+        'Disease models (in vitro, ASD/ADHD/CD)',
+        'Cell culture',
+        'Genetics',
+        'Molecular biology',
+        'CRISPR-Cas9',
+        'Fluorescence and luminescence assays',
+        'Immunohistochemistry',
+        'Microscopy'
+      ],
+
+    "topics":[
+      'Autism Spectrum Disorder (ASD)',
+      'Attention Deficit Hyperactivity Disorder (ADHD)',
+      'Conduct Disorder'
+    ],
+    "models":[
+      'Humans (Homo sapiens)'
+    ],
+    "location":"Niederrad",
+    "semester":['Winter','Summer'],
+    "links":[
+      'https://www.researchgate.net/profile/Andreas-Chiocchetti'
+    ]
+  },
+
+  {
+    "code":"C3",
+    "name":"Modelling and Simulation",
+    "coordinators":["Prof. Gabriel Wittum"],
+    "techniques":[
+        'Vector analysis',
+        'Mathematical modeling',
+        'Simulation techniques (ODEs/PDEs)'
+      ],
+
+    "topics":[
+      'Scientific computing',
+      'Mathematical modeling',
+      'Simulation techniques',
+      'High-Performance Computing'
+    ],
+    "models":[
+      'Computer'
+    ],
+    "location":"Westend",
+    "semester":['Summer'],
+    "links":[
+      'https://scholar.google.de/citations?user=GYubNyUAAAAJ',
+      'https://gcsc.uni-frankfurt.de/simulation-and-modelling'
+    ]
+  },
+
+  {
+    "code":"C4",
+    "name":"Virtual Hippocampus : Introduction to Computational Neuroscience",
+    "coordinators":["Prof. Dr. Peter Jedlicka"],
+    "techniques":[
+      'Computational modeling (synaptic/dendritic/single-neuron/network models)',
+        'NEURON package',
+        'Programming (Python)',
+        'Data analysis'
+      ],
+
+    "topics":[
+      'Modeling of hippocampal cells and networks',
+      'Memory and learning',
+      'Synaptic plasticity',
+      'Molecular/cellular underpinnings of the role of dentate gyrus role in memory',
+      'GABAergic inhibition on dendritic computation'
+    ],
+
+    "models":[
+      'Computer'
+    ],
+    "location":"Niederrad",
+    "semester":['Winter','Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/jedlicka/',
+      'https://sites.google.com/site/peterjedlicka/'
+    ]
+  },
+
+  {
+    "code":"C8",
+    "name":"Systems Neuroscience : Sensorimotor and cognitive networks",
+    "coordinators":["PD Dr. Christian Kell"],
+    "techniques":[
+        'Behavioral experiments',
+        'Psychophysics',
+        'Electroencephalography (EEG)',
+        'Magnetoencephalography (MEG)',
+        'Functional magnetic resonance imaging (fMRI)',
+        'Statistics',
+        'Data analysis'
+      ],
+
+    "topics":[
+      'Linguistic processing and production in health and disease'
+    ],
+
+    "models":[
+      'Humans (Homo sapiens)'
+    ],
+    "location":"Niederrad",
+    "semester":['Winter','Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/kell/',
+      'http://www.brainclocks.com/interests.php'
+    ]
+  },
+
+  {
+    "code":"C10",
+    "name":"Computational neuroanatomy : quantitative analysis and modeling",
+    "coordinators":["Dr. Hermann Cuntz"],
+    "techniques":[
+        'Image processing (microscopy data)',
+        'Morphological modeling (treestoolbox)',
+        'Computational modeling (quantitative/biophysical models)',
+        'Programming (Matlab)',
+        'Data analysis'
+      ],
+
+    "topics":[
+      'Wiring principles of neuronal circuits',
+      'Dendritic structure and computations',
+      'Morphological modeling'
+    ],
+
+    "models":[
+      'Computer'
+    ],
+    "location":"Niederrad",
+    "semester":['Winter','Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/cuntz/',
+      'https://www.treestoolbox.org/hermann/'
+    ]
+  },
+
+  {
+    "code":"C11",
+    "name":"Computational Modeling of Neuronal Plasticity",
+    "coordinators":["Prof. Dr. Jochen Triesch"],
+    "techniques":[
+        'Computational modeling (network models, plasticity mechanisms)',
+        'Programming (Python/Matlab/Java)',
+        'Data analysis'
+
+      ],
+
+    "topics":[
+      'Artificial and natural neural networks',
+      'Plasticity mechanisms and rules',
+      'Role of plasticity in network dynamics and learning'
+    ],
+
+    "models":[
+      'Computer'
+    ],
+    "location":"Riedberg",
+    "semester":['Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/triesch/',
+      'https://www.fias.science/en/neuroscience/research-groups/jochen-triesch/'
+    ]
+  },
+
+  {
+    "code":"C12",
+    "name":"Computational Neural Dynamics",
+    "coordinators":["Dr. Tatjana Tchumatchenko"],
+    "techniques":[
+        'Mathematical modeling (single-neuron/network models)',
+        'Computational modeling (single-neuron/network models)',
+        'Analytical and numerical mathematics',
+        'Programming'
+      ],
+
+    "topics":[
+      'Spiking dynamics & connectivity of single neurons',
+      'Collective phenomena of neuronal networks'
+    ],
+
+    "models":[
+      'Computer'
+    ],
+    "location":"Riedberg",
+    "semester":['Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/tchumatchenko/',
+      'https://brain.mpg.de/tchumatchenko'
+    ]
+  },
+
+  {
+    "code":"C13",
+    "name":"Models for Neural Circuit Development",
+    "coordinators":["Dr. Julijana Gjorgjieva"],
+    "techniques":[
+        'Computational modeling (single-neuron/network models, plasticity mechanisms)',
+        'Programming',
+        'Calcium imaging (data analysis)',
+        'Electrophysiology (data analysis)',
+        'Data analysis',
+      ],
+
+    "topics":[
+      'Visual cortex plasticity',
+      'Sensory map and receptive field formation in visual cortex',
+      'Topography, ocular dominance columns, direction selectivity',
+      'Synaptic plasticity in biophysical neurons'
+    ],
+
+    "models":[
+      'Computer'
+    ],
+    "location":"Riedberg",
+    "semester":['Winter','Summer'],
+    "links":[
+      'https://brain.mpg.de/gjor',
+      'https://brain.mpg.de/gjor'
+    ]
+  },
+
+  {
+    "code":"C14",
+    "name":"Cognitive Psychology : Attention, Perception & Memory",
+    "coordinators":["Prof. Dr. Melissa Le-Hoa Vo"],
+    "techniques":[
+        'Study design',
+        'Programming',
+        'Data analysis (behavioral) ',
+        'Psychophysics',
+        'Electroencephalography (EEG)',
+        'Data analysis (EEG)',
+        'Eye tracking'
+      ],
+
+    "topics":[
+      'Visual attention',
+      'Scene perception',
+      'Memory'
+    ],
+
+    "models":[
+      'Computer'
+    ],
+    "location":"Westend",
+    "semester":['Winter'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/vo/',
+      'https://www.scenegrammarlab.com/research/'
+    ]
+  },
+
+  {
+    "code":"D1",
+    "name":"Behavioral Biology in Zoos",
+    "coordinators":["Prof. Dr. Paul Dierkes"],
+    "techniques":[
+        'Zoology theory',
+        'Zoo internship',
+        'Behavioral experiments'
+      ],
+
+    "topics":[
+      'Historical development of zoos',
+      'Zoos and conservation',
+      'Population biology',
+      'Breeding programs at zoo',
+      'Animal husbandry',
+      'Veterinary',
+      'Organization and structure development of zoos',
+      'Enclosure design and planning',
+      'Education at the zoo'
+    ],
+
+    "models":[
+      'Animals'
+    ],
+    "location":"Riedberg",
+    "semester":['Summer'],
+    "links":[
+      'https://www.bio.uni-frankfurt.de/43969445/abtdierkes',
+      'https://www.bio.uni-frankfurt.de/43969445/abtdierkes'
+    ]
+  }
+
+]
