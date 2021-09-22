@@ -73,7 +73,7 @@ margin-bottom: 2em;
   font-size: 16px;
   font-weight: bold;
   transition-duration: 0.2s;
-  box-shadow: 0 9px #d6d6d6;
+  box-shadow: 0 6px #d6d6d6;
   outline: none;
 }
 
@@ -82,7 +82,8 @@ margin-bottom: 2em;
 }
 
 #apply:active {
-  box-shadow: 0 5px #999;
+  box-shadow: 0 5px #d6d6d6;
+  background-color: #35db61;
   transform: translateY(4px);
 }
 
@@ -97,8 +98,8 @@ margin-bottom: 2em;
   display: inline-block;
   font-size: 16px;
   font-weight: bold;
-  transition-duration: 0.2s;
-  box-shadow: 0 9px #d6d6d6;
+  transition-duration: .2s;
+  box-shadow: 0 6px #d6d6d6;
   outline: none;
 }
 
@@ -107,7 +108,8 @@ margin-bottom: 2em;
 }
 
 #reset:active {
-  box-shadow: 0 5px #999;
+  box-shadow: 0 5px #d6d6d6;
+  background-color: #db3535;
   transform: translateY(4px);
 }
 

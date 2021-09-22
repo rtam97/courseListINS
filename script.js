@@ -212,6 +212,10 @@ function addTechniques(techniques){
   }
 }
 
+function filterList() {
+  checked = document.querySelectorAll('input[type=checkbox]:checked')
+}
+
 createCourseList(courses);
 
 extractTechniques(courses)
