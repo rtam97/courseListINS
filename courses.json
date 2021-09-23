@@ -20,7 +20,9 @@ courses = [
     ],
     "location":"Niederrad",
     "semester":['Summer'],
-    "links":['https://www.izn-frankfurt.de/en/mitglied/maronde/']
+    "links":['https://www.izn-frankfurt.de/en/mitglied/maronde/'],
+    "content":"The practical presents the basics of generating endogenous circadian rhythms in mammalian neurons. Here, the students analyze the cellular and molecular elements for chronobiological behaviour, working under supervision, and write up the results. Then the results obtained are presented in the form of a seminar talk. In a further seminar talk they present original research from the area of chrononeurobiology. The following techniques will be introduced: immunohistochemistry, protein gel electrophoresis, RNA extraction, RT-PCR, densitometry.",
+    "objectives":"Basic knowledge about cell and molecular biology, basic skills in neuroanatomy of the mammalian brain, basics in chronobiological systems biology, learning to work on scientific questions based on relevant publications."
   },
 
   {
@@ -48,7 +50,10 @@ courses = [
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/gottschalk/',
       'https://www.bmls.de/Cellular_and_Molecular_Neurobiology/projects.html',
-    ]
+    ],
+    "content":"This practical focuses on basic methods for investigating the nervous system of Caenorhabditis elegans. As well as more general molecular biology methods, this involves genetic methods (crosses, genotyping) as well as simple behaviour assays without and with the effect of specific agonists for ligand mediated ion channels (nicotinic acetylcholine receptors, GABA receptors) that are used for general characterization of the function of neuromuscular synapses. In addition, cell biology methods for expression analysis of transgenes (GTP-fusion proteins) or endogenous proteins (using specific antibodies) in relation to the genetic background are part of the lab’s standard repertoire. More specialised methods that are used are exogenous stimulation of neurons in C. elegans by light, transmitted by the transgene expressed, photo-activated cation channel rhodopsin-2, as well as electrophysiological conductance from C. elegans muscle cells (the latter only as a demonstration, since the method is too complicated to learn in 6 weeks). The students work on a current research project under the supervision of a PhD student and present the results in the form of a seminar talk. They learn how to present scientific work through writing up their result protocol."
+    ,
+    "objectives":"Familiarity with standard methods to analyse an invertebrate nervous system, genetic methods for making crosses, cell biology methods, molecular biology methods, learning to work on scientific questions based on relevant publications"
   },
 
   {
@@ -74,7 +79,10 @@ courses = [
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/klein/',
       'https://www.uni-frankfurt.de/57955275/Prof__Dr__Jochen_Klein',
-    ]
+    ],
+    "content":"This module teaches principles and methods of neuropharmacology. Our lab works with animal models of neurodegenerative disease such as stroke and dementia of the Alzheimer type. We use in vitro- as well as in vivomethods, with a focus on microdialysis which allows access to the extracellular fluid. In demonstrations and experiments, students will be trained to manufacture probes for microdialysis studies and will carry out measurements of neurotransmitters (e.g. acetylcholine, glutamate) and energy metabolites (glucose, lactate). Major topics will include investigations of the central cholinergic system and of the energy metabolism in the brain under ischemic conditions. The students will write protocols for their own work and will analyze their data both graphically and statistically in a way that would permit publication; thus, the students will learn basics of scientific work. The individual projects will be presented as seminar talks at the end of the module. In a further seminar talk, they will present an original piece of research (publication) from the field of neuropharmacology."
+    ,
+    "objectives":"Familiarity with biological and analytical experiments, basic knowledge in animal experimentation. Theory and practice of microdialysis, analysis of neurotransmitters and metabolites with chromatographic (HPLC) and enzymatic procedures. Addressing scientific questions with the help of relevant literature."
   },
 
   {
@@ -86,7 +94,8 @@ courses = [
         'Electrophysiology (in vivo)',
         'Signal processing',
         'Computational modeling (Stochastic modeling)',
-        'Immunohistochemistry'
+        'Immunohistochemistry',
+        'Data analysis'
       ],
     "topics":[
       'Basal ganglia dopaminergic neurophysiology & patohysiology',
@@ -99,7 +108,10 @@ courses = [
     "semester":['Summer'],
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/roeper/'
-    ]
+    ],
+    "content":"The practical covers basic electrophysiological single cell techniques (patch-clamp recordings & extracellular electrodes) of the dopaminergic midbrain system of mice in vivo and in vitro. The students work on their own projects under supervision and present their results in the form of a seminar talk. In a further seminar talk they present an original piece of research from the field of basal ganglia neurophysiology and pathophysiology (e.g. Parkinsos’s disease, schizophrenia, drug addiction). The main focuses are measuring and evaluating neuronal activity (current-clamp) and measuring (voltage-clamp) as well as biophysical and pharmacological characterisation of this neuronal activity mediated by synaptic and post-synaptic mechanisms (e.g. ion channels) with various configurations of the patch-clamp technique. This also includes using statistical evaluation methods. The students learn about the associated stochastic background and how to use the relevant software, which involves interdisciplinary cooperation with the BSc/MSc courses in mathematics."
+    ,
+    "objectives":"Familiarity with carrying out electrophysiological experiments, measuring and analysing electrical activity of dopaminergic neurons in vivo and in vitro, using and evaluating the patch-clamp technique to characterise biophysical and pharmacological properties of synaptic and post-synaptic ion channels. Combination of the patchclamp technique with neuroanatomical and immunohistological analyses. Basic computer modelling of neuronal activity. Stochastic description and statistical analysis of the recorded time sequence data. Understanding the molecular pathophysiological correlation between important diseases of the dopaminergic system and their corresponding mouse models."
   },
 
   {
@@ -114,7 +126,8 @@ courses = [
         'Neuroanatomy',
         'Immunohistochemistry',
         'Microscopy (confocal)',
-        'Behavioral experiments'
+        'Behavioral experiments',
+        'Data analysis'
       ],
     "topics":[
       'Ion channels and receptors functioning',
@@ -131,7 +144,11 @@ courses = [
     "semester":['Winter','Summer'],
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/gruenewald/'
-    ]
+    ],
+    "content":"The practical investigates the neurophysiological basis of behaviour control. The students work on their own project on a theme defined together beforehand. The techniques that are taught include: cell physiology (patchclamp conductance, intracellular conductance, calcium imaging, cell culture); neuroanatomy (staining methods, brain preparation, confocal laser microscopy, fluorescence microscopy); behavioural experiments (behaviour pharmacology, extracellular conductance, learning and memory, social behaviour). Insects (honey bees, drosophila) are used as model organisms. The principle areas are: how ion channels and transmitter receptors work, neuromodulation, learning behaviour, olfactory memory formation, and social behaviour of bees. The students present their results in the form of a seminar talk and poster. In a further seminar talk they learn how to critically assess analytic physiological and behavioural research papers. These presentations are held in English and the students receive comprehensive feedback about the content and style of the presentation. They become familiar with writing a scientific publication by producing a protocol in the form of a paper. After the individual experimental steps have been explained, the students mostly work independently, from planning to carrying out, writing up and evaluating the research data."
+    ,
+    "objectives":"Planning, carrying out and evaluating neurobiology experiments, measuring ion flow; observing and quantifying behaviour; neuroanatomical methods. How to approach scientific questions, working with publications. Preparing scientific papers and presentations."
+
   },
 
   {
@@ -159,7 +176,11 @@ courses = [
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/liebner/',
       'http://www.bbbsignaling.de/home.html'
-    ]
+    ],
+    "content":"The practical course offers basic theoretical and experimental knowledge in the area of the brain vasculature in developmental and pathological neurobiology. Principal areas of research are the development and maintenance of the blood-brain barrier (BBB), and its relevance for neuronal function. The students take part on ongoing experiments in the laboratory to elucidate the molecular mechanisms of BBB formation. Their work may include: basic mouse genetics techniques and the handling of transgenic mice (various reporter mouse strains for the Wnt pathway as well as conditional/inducible gain- and loss-of-functions strains), processing of brain tissue for in situ hybridization and immunohistochemisty, isolation of primary cortical microvessels from mice, transfection and infection techniques, immunofluorescence, confocal and live-cell microscopy, biochemical techniques including protein gel electrophoresis, Western blot and immunoprecipitation. The results of the practical course are presented by every student on the form of a written protocol and a talk at the end of the course. The students also take part on the weekly lab meetings where they learn about the ongoing research of all the members of the group. In a Journal Club every student presents a recent publication on the field of their own projects."
+    ,
+    "objectives":"Students learn the basic techniques to study cellular and molecular Neurobiology (as detailed above). By the end of the course they have been in direct contact with mice and/or cells in vitro and they learn how to appropriately handle mouse tissue and cells for experiments. The students are in an international environment and learn how to write and communicate their results in English."
+
   },
 
   {
@@ -186,7 +207,10 @@ courses = [
     "semester":['Summer'],
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/schulte/'
-    ]
+    ],
+    "content":"Topic of this practical course are principles of neurogenesis in vertebrates, with special focus on cell intrinsic mechanisms governing cell fate specification and differentiation of adult and embryonic stem- and progenitor cells in the brain. The students work on their own projects with supervision and present their results in the form of a seminar talk. In addition, one original publication from recent literature relevant to his/her research project will be presented and discussed. The results obtained during the course will be recorded in a written results protocol either in the form of a short research paper or of a short grant application in order to allow the students to gain first practical experience in these two important forms of scientific writing."
+    ,
+    "objectives":"The practical course teaches basic techniques in cellular and molecular developmental neuroscience. Model organisms used are mice and chick embryos. Emphasis will be placed on retroviral gene transfer in vivo and in vitro; working with cell lines and primary cell cultures (embryonic and adult neural stem and progenitor cells); biochemical techniques (sub cellular fractionation, protein purification); immunohistochemistry, in situ hybridization; working with transgenic animals."
   },
 
   {
@@ -194,8 +218,9 @@ courses = [
     "name":"Electrophysiological recordings in freely behaving animals",
     "coordinators":["Dr. Torfi Sigurdsson"],
     "techniques":[
+        'Study design',
         'Behavioral experiments (spatial working memory)',
-        'Electrophysiology (in vivo)',
+        'Electrophysiology (in vivo, free-behavior)',
         'Signal processing (Spike and LFP extraction)',
         'Data analysis'
       ],
@@ -212,6 +237,11 @@ courses = [
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/sigurdsson/'
     ]
+    ,
+    "content":"This practical will introduce students to the techniques used to examine neural activity in freely behaving animals. Students will record neural activity extracellularly from the hippocampus of mice performing a spatial working memory task and analyze the neural data in relation to the animal’s behavior. Students will learn how to train animals to perform a behavioral task, how to perform extracellular recordings in freely behaving animals; how to extract the spiking of individual neurons as well as local field potentials from the neural data; and how to analyze these signals in relation to each other and the animals’ behavior. Students will present the data they have collected and analyzed at the end of the practical. In addition, they are required to present one recent paper that is relevant to the work in a journal club."
+    ,
+    "objectives":"Behavioral training; basic knowledge of techniques used to record and analyze neural activity from freely behaving animals; ability to generate scientific hypotheses based on previous literature and design experiments to test them."
+
   },
 
   {
@@ -240,7 +270,11 @@ courses = [
     "semester":['Summer'],
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/gaese/'
-    ]
+    ],
+    "content":"The practical teaches techniques to determine auditory function and dysfunction in rodents. These techniques can be used to determine effects of pharmacological or behavioral treatments of sensory disorders such as tinnitus or hearing loss. The focus is on behavioral techniques suitable to characterize the disorder rather precisely in comparison to normal functions. All steps that are necessary for a project in the field are taught in this practical: study design, animal handling, control of experimental parameters, pharmacological treatment of animals, and data analysis. The behavioral analysis is paralleled by basic electrophysiological measurements necessary to determine the effects of dysfunction and treatments at the physiological level. The students work on their own projects under supervision and present their results in the form of a seminar talk. The main focuses are: measuring and analyzing behavioral data, performing efficient physiological experiments to determine auditory function, and statistical evaluation methods. Preparation of a potential publication will be the final part of the project. After completion, the individual projects will be presented and discussed in the form of a seminar talk. In a further seminar talk the students will present an original piece of research from the area of cognition and hearing."
+    ,
+    "objectives":"Familiarity with carrying out well controlled behavioral experiments (animal handling, measuring and analyzing behavioral data, statistical analysis). Performing physiological measurements including electrophysiological recording in minimally invasive preparations. Additional aspects are: introduction to software for data handling, signal processing, and graphical display. Deriving scientific questions from the current literature. Knowledge about the usage and limitations of animal models for neurological diseases."
+
   },
 
   {
@@ -268,7 +302,11 @@ courses = [
     "semester":['Summer'],
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/gaese/'
-    ]
+    ],
+    "content":"The practical covers the whole range of techniques to investigate brain activity underlying the processing of sensory information in the auditory domain. The focus is on electrophysiological single cell techniques in rodents in the awake and anesthetized preparations. Brain activity is acquired and analyzed with the goal to understand behavioral responses following auditory stimulation. Cognitive aspects (e.g. context-dependence) are taken into account. The students work on their own projects under supervision and present their results in the form of a seminar talk. The main focuses are measuring and analyzing neuronal activity in different configurations of in-vivo recording techniques. The following analysis includes modern techniques of signal processing, efficient handling of larger data sets and statistical evaluation methods. Preparation of a potential publication will be the final part of the project After completion, the individual projects will be presented and discussed in the form of a seminar talk. In a further seminar talk the students will present an original piece of research from the area of cognition and hearing."
+    ,
+    "objectives":"Familiarity with carrying out physiological experiments (animal handling, surgery, measuring and analyzing electrical activity at the single neuron level. Combining physiology with neuroanatomical and histological staining techniques. Basic introduction to behavioral control. Introduction to software for data handling, signal processing, statistical analysis and graphical display. Understanding cognitive influences on sensory information processing as an important aspect of context-dependent behavior. Deriving scientific questions from the current literature."
+
   },
 
   {
@@ -298,7 +336,11 @@ courses = [
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/hechavarria/',
       'https://www.julio-hechavarria.com/'
-    ]
+    ],
+    "content":"The main goal of this course is to understand how mammals communicate using acoustic information (sounds). The course is designed from the perspective of the “broadcaster-receiver” approach, and therefore it is consequently subdivided into two parts. The first part is meant for understanding the sounds broadcasted by two mammalian species (Mongolian gerbils and bats) while they are communicating. Basically, using bioacoustics tools, the students will try to figure out the vocal alphabet of bats and gerbils. The second part of the course deals with the receiver. In this part, the students will learn how the gerbil’s voice is processed in the brain by neurons located in the auditory cortex. The main aim here is to assess what happens in the brain when an animal hears a behaviorally relevant sound. At the beginning of each course part, there will be introductory discussions that will provide the students with the necessary theoretical background for conducting and understanding the different experiments. An introduction to statistics and to MATLAB will also be offered. The final report will be written in the form of a scientific paper, and the results will be presented in the form of a short talk."
+    ,
+    "objectives":"By the end of the course, the students should be able to: (1) Understand basic concepts of bioacoustics such as the sound as a mechanical wave, sound transduction using microphones, analog-to-digital conversion using sound cards. (2) Measure basic parameters of a sound wave (frequency, duration, intensity). (3) Perform basic surgeries required for acquiring neuronal data. (4) Understand basic neuroscience concepts such as: action potential, local field potential, receptive field, brain topography, spike clustering, brain oscillations. (5) Testing hypothesis using basic statistical tests (normality tests, parametric and non-parametric t-tests and analyses of variance (ANOVA))."
+
   },
 
   {
@@ -314,7 +356,8 @@ courses = [
         'Genetic techniques (zebrafish)',
         'Microscopy',
         'Embryo manipulation',
-        'Behavioral experiments'
+        'Behavioral experiments',
+        'Data Analysis'
       ],
 
     "topics":[
@@ -330,7 +373,11 @@ courses = [
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/acker-palmer/',
       'https://sites.google.com/view/neuro-vessel-frankfurt/home'
-    ]
+    ],
+    "content":"The practical course offers basic theoretical and experimental knowledge in the area of cellular, molecular and systemic neurobiology in mouse and zebrafish. The students work on their own projects under supervision and present the results in the form of a seminar talk. In a second seminar talk they present an original publication from the field of their projects. By writing a result protocol, they will learn how to write scientific reports. The practical course is divided in two units. The first part includes the following tasks: basic mouse genetic techniques, processing of brain tissue for immunohistochemistry, basic techniques of working with neuronal cell cultures, immunofluorescence microscopy, confocal microscopy, and biochemical techniques including protein gel electrophoresis and Western blotting. In the second part of the practical course, the students will be introduced to basic zebrafish genetics using methods in molecular biology and histological techniques, confocal microscopy and brightfield microscopy as well as zebrafish embryo manipulation and basic behavioral tests."
+    ,
+    "objectives":"Students learn the basic techniques for studying cellular, molecular, and systemic neurobiology (as detailed above). They work with cultured cells under sterile conditions, with the epifluorescence microscope and the stereo microscope. The students will be trained in zebrafish embryo handling and basic genetic techniques, and quantify and analyse the obtained data and images. The students are in an international environment and learn how to write and communicate their results in English."
+
   },
 
   {
@@ -338,8 +385,9 @@ courses = [
     "name":"Optogenetics and calcium recordings in freely behaving animals",
     "coordinators":["Dr. Sevil Duvarci"],
     "techniques":[
+        'Study design',
         'Optogenetics',
-        'Calcium recordings (Fiber photometry)',
+        'Calcium imaging (in vivo, fiber photometry, free-behavior)',
         'Behavioral experiments',
         'Signal processing',
         'Data analysis'
@@ -357,7 +405,11 @@ courses = [
     "semester":['Summer'],
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/duvarci/'
-    ]
+    ],
+    "content":"The aim of this practical module will be to introduce students to optogenetics and fiber photometry techniques in freely behaving animals performing behavioral tasks. The students will learn how to perform chronic surgeries for viral injections and optical fiber implantations; how to perform behavioral tasks; how to run optogenetic experiments in freely behaving animals; how to perform calcium recordings in freely behaving animals using fiber photometry; and how to analyze calcium signals in relation to animal’s behavior. The optogenetic manipulations and calcium recordings will mainly be performed in the midbrain dopamine system while animals perform behavioral tasks such as reward learning paradigms. At the end of the module, the students will present the results of the experiments they performed."
+    ,
+    "objectives":"The students will learn the basics of performing behavioral tasks and optogenetic and calcium recording experiments in freely behaving animals. They will learn how to design experiments to test specific hypotheses."
+
   },
 
   {
@@ -386,7 +438,10 @@ courses = [
     "semester":['Winter','Summer'],
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/hefendehl/'
-    ]
+    ],
+    "content":"The practical course offers basic theoretical and experimental knowledge in the area of neurodegenerative and vascular disorders. The students work on their own projects under supervision and present the results in the form of a seminar talk. This talk also includes an original publication from the field of their projects. By writing a result protocol, they will learn how to write scientific reports. The practical course consists of systemic, cellular and molecular aspects that will be addressed using transgenic mouse models. This includes the following techniques: in vivo 2-Photon Microscopy, Image- and data analysis, basic mouse genetic techniques, processing of brain tissue for immunohistochemistry, basic primary cell culture techniques, immunofluorescence microscopy, confocal microscopy as well as biochemical techniques including protein gel electrophoresis and Western blotting."
+    ,
+    "objectives":"In this elective module the student will learn fundamental techniques used to in the research area of neurodegenerative disorders (as described above). In vivo 2-Photon imaging enables us to record systemic as well as cellular processes in real time. The students are presented with the opportunity to observe in vivo animal handling and the live imaging process. The acquired data will be analyzed by the students, teaching them basic Image- and data analysis skills. The immunohistochemical stainings of brain sections will teach the students the technique as well as the underlying scientific question of the experiment. Moreover, the students will work with cultured cells under sterile conditions, with the epifluorescence – and stereo microscope. The students are in an international environment and learn how to write and communicate their results in English."
   },
 
   {
@@ -419,7 +474,10 @@ courses = [
     "semester":['Winter','Summer'],
     "links":[
       'https://www.esi-frankfurt.de/research/havenith-scholvinck-lab/'
-    ]
+    ],
+    "content":"Humans may not be good at multitasking – but their brains are! Cognitive processes such as learning and attention are often represented in the same brain areas, at the same time. Previous research has overwhelmingly focused on how each of these processes affects neuronal activity in isolation. In contrast, in our lab we study how neuronal activity represents such cognitive processes simultaneously, and whether this is evolutionarily preserved or varies across species. For this, we conduct parallel experiments in monkeys and mice. These animals are trained to do naturalistic foraging tasks in a virtual environment, while we record the activity of large neuronal populations in their visual system. Since the lab is still in the build-up phase, what you would do is various. Depending on when you come, you get experience in mouse/monkey handling and training, Matlab/Python programming, psychophysics, virtual reality (VR), and in-vivo electrophysiology."
+    ,
+    "objectives":"In this elective module the students will get exposed to all the techniques necessary for in-vivo electrophysiology: handling of animals (mice and/or monkeys), training the animals on a natural task in a virtual environment, surgeries to implant electrodes, and electrophysiological recordings from these electrodes as the animals are doing their task. In addition, the students can do some psychophysics on human subjects in the VR, and they will get their own data analysis project, which will allow them to learn Matlab/Python programming. The students are in an international environment and learn how to write and communicate their results in English."
   },
 
   {
@@ -430,10 +488,10 @@ courses = [
         'Disease models (in vivo, Parkinson\'s/Ataxia)',
         'Motor/behavioral analysis',
         'Disease progression analysis',
+        'Data analysis',
         'Genetic techniques',
         'Molecular biology',
-        'Histology',
-        'Microscopy'
+        'Histology'
       ],
 
     "topics":[
@@ -447,7 +505,10 @@ courses = [
     "semester":['Winter','Summer'],
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/auburger/'
-    ]
+    ],
+    "content":"The practical course introduces basic analysis techniques for mouse models of the neurodegenerative diseases Parkinson’s and ataxia. The students are trained in objective methods to measure motor and behaviour patterns (Offenfeld, Rotarod, etc.), statistical evaluation for progression analyses (ANOVA, Regression, etc.) as well as molecular genetic mutation tests (tail biopsy, DNA extraction, quantitative PCR) and analysing the expression profile of mutated tissue. They work on current projects under supervision, report on up to date science in a Journal Club, and present the experimental results in the form of a seminar talk. They learn how to present scientific work through writing up a result protocol."
+    ,
+    "objectives":"Basic knowledge about designing and carrying out motor-behaviour analyses in rodents as well as statistical evaluation. Learning methods in cell biology (fibroblasts/cell culture, transfection), molecular genetics/biology (quantitative PCR, Western blots), histological methods, learning to work on scientific questions based on relevant publications."
   },
 
   {

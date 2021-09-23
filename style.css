@@ -43,10 +43,29 @@ label {
   font-weight: bold;
   font-size: 18;
   color:black;
+  content: '\25B6';
+  text-decoration: none;
+}
+
+/* .filter-title:before {
+  content: '\25B6';
+  padding-right: 1em;
+} */
+
+.inactive::before {
+  content: '\25B6';
+  padding-right: 1em;
+}
+
+.active::before {
+  content: '\25BC';
+  padding-right: 1em;
 }
 
 .filter-title:hover {
   color: black;
+  text-decoration: none;
+  font-weight: 300;
 }
 
 .filter-list {

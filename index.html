@@ -1,16 +1,8 @@
 <html>
   <head>
-    <title>Course List</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
-
-
-    <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="favicon.ico"/>
 
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -42,7 +34,7 @@
         </div>
         <div class="filter-div" id="cousetype-div">
           <p>
-            <a href="#typefilter" class="filter-title" id="coursefiltertoggle" data-toggle="collapse">Course type</a>
+            <a onclick="toggleActive(this);" href="#typefilter" class="filter-title inactive" id="coursefiltertoggle" data-toggle="collapse">Course type</a>
           </p>
           <ul class="filter-list" id="course-type">
 
@@ -70,7 +62,7 @@
         </div>
         <div class="filter-div" id="campus-div">
           <p>
-            <a href="#campusfilter" class="filter-title" id="campusfiltertoggle" data-toggle="collapse">Campus</a>
+            <a onclick="toggleActive(this);" href="#campusfilter" class="filter-title inactive" id="campusfiltertoggle" data-toggle="collapse">Campus</a>
           </p>
           <ul class="filter-list" id="campus-list">
 
@@ -94,7 +86,7 @@
         </div>
         <div class="filter-div" id="semester-div">
           <p>
-            <a href="#semesterfilter" class="filter-title" id="semesterfiltertoggle" data-toggle="collapse">Semester</a>
+            <a onclick="toggleActive(this);" href="#semesterfilter" class="filter-title inactive" id="semesterfiltertoggle" data-toggle="collapse">Semester</a>
           </p>
           <ul class="filter-list" id="semester-list">
 
@@ -114,7 +106,7 @@
         </div>
         <div class="filter-div" id="techniques-div">
           <p>
-            <a href="#techfilter" class="filter-title" id="techfiltertoggle" data-toggle="collapse">Techniques</a>
+            <a onclick="toggleActive(this);" href="#techfilter" class="filter-title inactive" id="techfiltertoggle" data-toggle="collapse">Techniques</a>
           </p>
           <ul class="filter-list" id="tech-list">
 

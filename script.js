@@ -135,6 +135,7 @@ function createCourseList(courseData) {
               courseDesc.appendChild(b)
             }
 
+            console.log(courseData[i]);
             // Change colors depending on course type
             if (courseData[i].code.includes('A')) {
 
@@ -217,17 +218,15 @@ function filterList(courselist) {
   oldCourseList = courselist;
   newCourseList = [];
 
+  // Only filter if there are checkboxes
   if (checked.length != 0) {
-
-
     courseType  = [];
     campus      = [];
     semester    = [];
     tech        = [];
 
+    // Sort checkboxes by category
     for (var i = 0; i < checked.length; i++) {
-
-
       switch (checked[i].parentElement.parentElement.parentElement.id) {
         case 'course-type':
           courseType.push(checked[i].value)
@@ -246,38 +245,48 @@ function filterList(courselist) {
       }
     }
 
+    // Remove all courses, before adding filtered ones
     el = document.getElementById('courses');
     el.remove();
 
+    // Iterate through ALL COURSES
     for (var i = 0; i < oldCourseList.length; i++) {
 
+      // CourseType filter
       if (courseType.includes(oldCourseList[i].code[0]) || courseType.length == 0) {
+
+        // Campus filter
         if (campus.includes(oldCourseList[i].location) || campus.length == 0) {
 
-
-          if (semester.length > 1 || oldCourseList[i].semester == 1) {
-            testForBoth = semester.includes(oldCourseList[i].semester[0]);
-          } else if (semester.length == 1 || oldCourseList[i].semester > 1) {
-            testForBoth = oldCourseList[i].semester.includes(semester[0]);
+          // Semester check
+          if        (semester.length == 2 || oldCourseList[i].semester == 1) {
+                        testForBoth = semester.includes(oldCourseList[i].semester[0]);
+          } else if (semester.length == 1 || oldCourseList[i].semester == 2) {
+                        testForBoth = oldCourseList[i].semester.includes(semester[0]);
           } else {
-            testForBoth = false;
+                        testForBoth = false;
           }
+
+          // Semester filter
           if (testForBoth || semester.length == 0) {
 
-
-            for (var j = 0; j < oldCourseList[i].techniques.length; j++) {
-              // Find index of parenthesis
-              par = oldCourseList[i].techniques[j].indexOf("(")
-              if (par != -1) {
-                teknik = oldCourseList[i].techniques[j].substr(0,par-1)
-              } else {
-                teknik = oldCourseList[i].techniques[j]
+            if (tech.length != 0) {
+              for (var j = 0; j < oldCourseList[i].techniques.length; j++) {
+                // Find index of parenthesis
+                par = oldCourseList[i].techniques[j].indexOf("(")
+                if (par != -1) {
+                  teknik = oldCourseList[i].techniques[j].substr(0,par-1)
+                } else {
+                  teknik = oldCourseList[i].techniques[j]
+                }
+                if (tech.includes(teknik)){
+                  newCourseList.push(oldCourseList[i]);
+                  found = true
+                  break
+                }
               }
-              if (tech.includes(teknik)){
-                newCourseList.push(oldCourseList[i]);
-                found = true
-                break
-              }
+            } else {
+              newCourseList.push(oldCourseList[i]);
             }
           }
         }
@@ -299,6 +308,16 @@ function resetFilters() {
   el = document.getElementById('courses');
   el.remove();
   createCourseList(courses);
+}
+
+function toggleActive(element) {
+  if (element.classList.contains('active')) {
+    element.classList.remove('active')
+    element.classList.add('inactive')
+  } else if (element.classList.contains('inactive')) {
+    element.classList.remove('inactive')
+    element.classList.add('active')
+  }
 }
 
 createCourseList(courses);
