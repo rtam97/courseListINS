@@ -146,7 +146,7 @@ function createCourseList(courseData) {
 
 
             } else if (courseData[i].code.includes('C')) {
-              changeColor(courseData,'#e3e3e3','#696969','#696969','#dbdbdb',i)
+              changeColor(courseData,'#e3e3e3','#696969','#696969','#f0f0f0',i)
 
             } else if (courseData[i].code.includes('D')) {
 
@@ -212,8 +212,76 @@ function addTechniques(techniques){
   }
 }
 
-function filterList() {
+function filterList(courselist) {
   checked = document.querySelectorAll('input[type=checkbox]:checked')
+  oldCourseList = courselist;
+  newCourseList = [];
+
+  if (checked.length != 0) {
+
+
+    courseType  = [];
+    campus      = [];
+    semester    = [];
+    tech        = [];
+
+    for (var i = 0; i < checked.length; i++) {
+
+
+      switch (checked[i].parentElement.parentElement.parentElement.id) {
+        case 'course-type':
+          courseType.push(checked[i].value)
+          break;
+        case 'campus-list':
+          campus.push(checked[i].name)
+          break;
+        case 'semester-list':
+          semester.push(checked[i].name)
+          break;
+        case 'tech-list':
+          tech.push(checked[i].name)
+          break;
+        default:
+          console.log('default-switch')
+      }
+    }
+
+    el = document.getElementById('courses');
+    el.remove();
+
+    for (var i = 0; i < oldCourseList.length; i++) {
+
+      if (courseType.includes(oldCourseList[i].code[0]) || courseType.length == 0) {
+        if (campus.includes(oldCourseList[i].location) || campus.length == 0) {
+
+
+          if (semester.length > 1 || oldCourseList[i].semester == 1) {
+            testForBoth = semester.includes(oldCourseList[i].semester[0]);
+          } else if (semester.length == 1 || oldCourseList[i].semester > 1) {
+            testForBoth = oldCourseList[i].semester.includes(semester[0]);
+          } else {
+            testForBoth = false;
+          }
+          if (testForBoth || semester.length == 0) {
+
+
+            for (var j = 0; j < tech.length; j++) {
+              if (oldCourseList[i].techniques.includes(tech[j])){
+                newCourseList.push(oldCourseList[i]);
+                found = true
+                break
+              }
+            }
+          }
+        }
+      }
+    }
+  } else {
+    el = document.getElementById('courses');
+    el.remove();
+    newCourseList = oldCourseList;
+  }
+  createCourseList(newCourseList);
 }
 
 createCourseList(courses);

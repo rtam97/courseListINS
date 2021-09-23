@@ -1,5 +1,6 @@
 <html>
   <head>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
 
     <!-- JQUERY -->
@@ -27,7 +28,7 @@
 
       <div class="filters-div">
         <div class="buttons-div" id="buttons">
-          <button type="button" name="apply" id="apply"><span>Apply Filters</span></button>
+          <button type="button" name="apply" id="apply" onclick="filterList(courses);"><span>Apply Filters</span></button>
           <button type="button" name="reset" id="reset"><span>Reset Filters</span></button>
         </div>
         <div class="filter-div" id="cousetype-div">
@@ -38,19 +39,19 @@
 
             <div class="collapse" id="typefilter">
               <li class="filter-option">
-                <input type="checkbox" id="Basic" name="Basic" value="Basic">
+                <input type="checkbox" id="Basic" name="Basic" value="A">
                 <label for="Basic">Basic</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" id="Clinical" name="Clinical" value="Clinical">
+                <input type="checkbox" id="Clinical" name="Clinical" value="B">
                 <label for="Clinical">Clinical</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" id="CognitiveComputational" name="CognitiveComputational" value="CognitiveComputational">
+                <input type="checkbox" id="CognitiveComputational" name="CognitiveComputational" value="C">
                 <label for="CognitiveComputational">Cognitive/Computational</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" id="Applied" name="Applied" value="Applied">
+                <input type="checkbox" id="Applied" name="Applied" value="D">
                 <label for="Applied">Applied</label>
               </li>
             </div>
