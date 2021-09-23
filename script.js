@@ -326,9 +326,9 @@ function filterList(courselist) {
         if (campus.includes(oldCourseList[i].location) || campus.length == 0) {
 
           // Model filter
-          for (var k = 0; k < modz.length; k++) {
-            
-            if (oldCourseList[i].models.includes(modz[k])) {
+          for (var k = 0; k < oldCourseList[i].models.length; k++) {
+
+            if ((modz.includes(oldCourseList[i].models[k]) || modz.length == 0 )&& !newCourseList.includes(oldCourseList[i])) {
 
               // Semester check
               if        (semester.length == 2 || oldCourseList[i].semester == 1) {
