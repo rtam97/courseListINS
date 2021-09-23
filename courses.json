@@ -85,7 +85,7 @@ courses = [
         'Electrophysiology (in vitro)',
         'Electrophysiology (in vivo)',
         'Signal processing',
-        'Modeling (Stochastic modeling)',
+        'Computational modeling (Stochastic modeling)',
         'Immunohistochemistry'
       ],
     "topics":[

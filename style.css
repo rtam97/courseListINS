@@ -56,16 +56,17 @@ label {
 }
 
 .buttons-div {
-margin-left: 20%;
+margin-left: 15%;
 margin-bottom: 2em;
 }
 
 
 #apply {
   border-radius: 8px;
-  background-color: #35db61;
-  color: white;
-  border: none;
+  background-color: white;
+  color: #35db61 ;
+  border-width: 2.5px;
+  border-color: 13692b;
   padding: .5em 1em;
   text-align: center;
   text-decoration: none;
@@ -73,25 +74,26 @@ margin-bottom: 2em;
   font-size: 16px;
   font-weight: bold;
   transition-duration: 0.2s;
-  box-shadow: 0 6px #d6d6d6;
   outline: none;
 }
 
 #apply:hover {
   background-color: #13692b;
+  color: white;
 }
 
 #apply:active {
-  box-shadow: 0 5px #d6d6d6;
   background-color: #35db61;
   transform: translateY(4px);
 }
 
 #reset {
   border-radius: 8px;
-  background-color: #db3535;
-  color: white;
-  border: none;
+  background-color: white;
+  /* #db3535; */
+  color: #db3535;
+  border-color: #691313;
+  border-width: 2.5px;
   padding: .5em 1em;
   text-align: center;
   text-decoration: none;
@@ -99,16 +101,15 @@ margin-bottom: 2em;
   font-size: 16px;
   font-weight: bold;
   transition-duration: .2s;
-  box-shadow: 0 6px #d6d6d6;
   outline: none;
 }
 
 #reset:hover {
   background-color: #691313;
+  color:white;
 }
 
 #reset:active {
-  box-shadow: 0 5px #d6d6d6;
   background-color: #db3535;
   transform: translateY(4px);
 }

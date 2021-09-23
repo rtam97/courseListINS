@@ -265,8 +265,15 @@ function filterList(courselist) {
           if (testForBoth || semester.length == 0) {
 
 
-            for (var j = 0; j < tech.length; j++) {
-              if (oldCourseList[i].techniques.includes(tech[j])){
+            for (var j = 0; j < oldCourseList[i].techniques.length; j++) {
+              // Find index of parenthesis
+              par = oldCourseList[i].techniques[j].indexOf("(")
+              if (par != -1) {
+                teknik = oldCourseList[i].techniques[j].substr(0,par-1)
+              } else {
+                teknik = oldCourseList[i].techniques[j]
+              }
+              if (tech.includes(teknik)){
                 newCourseList.push(oldCourseList[i]);
                 found = true
                 break
@@ -282,6 +289,16 @@ function filterList(courselist) {
     newCourseList = oldCourseList;
   }
   createCourseList(newCourseList);
+}
+
+function resetFilters() {
+  checked = document.querySelectorAll('input[type=checkbox]:checked')
+  for (var i = 0; i < checked.length; i++) {
+    checked[i].checked = false;
+  }
+  el = document.getElementById('courses');
+  el.remove();
+  createCourseList(courses);
 }
 
 createCourseList(courses);
