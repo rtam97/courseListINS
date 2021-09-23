@@ -1,3 +1,4 @@
+// Change the COLORS of the course elements depending on the CODE
 function changeColor(courseData,a,b,c,d,i) {
                     //
   // BACGROUND (a)
@@ -14,6 +15,7 @@ function changeColor(courseData,a,b,c,d,i) {
   k.style.backgroundColor = d
 }
 
+// Create an unordered LIST
 function makeList(listData,parentDiv,titleName) {
 
     // Make the list
@@ -38,6 +40,7 @@ function makeList(listData,parentDiv,titleName) {
   par.append(listElement)
 }
 
+// Create an HTML element of the given TYPE, CLASS, ID, innerHTML, PARENT ELEM
 function createItem(type,className,id,textHTML,parent) {
   item = document.createElement(type);
   item.classList.add(className);
@@ -51,6 +54,7 @@ function createItem(type,className,id,textHTML,parent) {
   return item
 }
 
+// Create the list of course elements given a list of courses (filtered/unf)
 function createCourseList(courseData) {
 
   // Make a container element for the course list and add it to the page
@@ -135,7 +139,6 @@ function createCourseList(courseData) {
               courseDesc.appendChild(b)
             }
 
-            console.log(courseData[i]);
             // Change colors depending on course type
             if (courseData[i].code.includes('A')) {
 
@@ -158,6 +161,7 @@ function createCourseList(courseData) {
   }
 }
 
+// Extract the techniques from the JSON file of courses (only launched at the start)
 function extractTechniques(courseData) {
 
   techniques = []
@@ -188,6 +192,7 @@ function extractTechniques(courseData) {
   return techniques
 }
 
+// Add extracted techniques to the filters
 function addTechniques(techniques){
 
   parent = document.getElementById('techfilter')
@@ -213,6 +218,64 @@ function addTechniques(techniques){
   }
 }
 
+// Extract the techniques from the JSON file of courses (only launched at the start)
+function extractModels(courseData) {
+
+  models = []
+  // Iterate through courses
+  for (var i = 0; i < courseData.length; i++) {
+    // For each technique
+    for (var j = 0; j < courseData[i].models.length; j++) {
+      // Extract name
+      name = courseData[i].models[j]
+      try {
+        courseData[i].models[j].toLowerCase()
+      } catch (e) {
+        console.log(courseData[i].code)
+        console.log(courseData[i].models[j])
+      }
+
+      // // Find index of parenthesis
+      // par = name.indexOf("(")
+      // if (par != -1) {
+      //   name = name.substr(0,par-1)
+      // }
+      if (!models.includes(name)) {
+        models.push(name)
+      }
+    }
+  }
+  models = models.sort()
+  return models
+}
+
+// Add extracted techniques to the filters
+function addModels(models){
+
+  parent = document.getElementById('modfilter')
+  for (var i = 0; i < models.length; i++) {
+
+
+    li = document.createElement('li')
+    li.classList.add('filter-option')
+    parent.appendChild(li)
+
+    input = document.createElement('input')
+    input.setAttribute('type','checkbox')
+    input.setAttribute('id',models[i])
+    input.setAttribute('name',models[i])
+    input.setAttribute('value',models[i])
+    li.appendChild(input)
+
+    label = document.createElement('label')
+    label.setAttribute('for',models[i])
+    label.innerHTML = models[i]
+    li.appendChild(label)
+
+  }
+}
+
+// Apply filters to the course list. Generates newCourseList
 function filterList(courselist) {
   checked = document.querySelectorAll('input[type=checkbox]:checked')
   oldCourseList = courselist;
@@ -223,6 +286,7 @@ function filterList(courselist) {
     courseType  = [];
     campus      = [];
     semester    = [];
+    modz        = [];
     tech        = [];
 
     // Sort checkboxes by category
@@ -236,6 +300,9 @@ function filterList(courselist) {
           break;
         case 'semester-list':
           semester.push(checked[i].name)
+          break;
+        case 'mod-list':
+          modz.push(checked[i].name)
           break;
         case 'tech-list':
           tech.push(checked[i].name)
@@ -258,37 +325,49 @@ function filterList(courselist) {
         // Campus filter
         if (campus.includes(oldCourseList[i].location) || campus.length == 0) {
 
-          // Semester check
-          if        (semester.length == 2 || oldCourseList[i].semester == 1) {
-                        testForBoth = semester.includes(oldCourseList[i].semester[0]);
-          } else if (semester.length == 1 || oldCourseList[i].semester == 2) {
-                        testForBoth = oldCourseList[i].semester.includes(semester[0]);
-          } else {
-                        testForBoth = false;
-          }
+          // Model filter
+          for (var k = 0; k < modz.length; k++) {
+            
+            if (oldCourseList[i].models.includes(modz[k])) {
 
-          // Semester filter
-          if (testForBoth || semester.length == 0) {
+              // Semester check
+              if        (semester.length == 2 || oldCourseList[i].semester == 1) {
+                            testForBoth = semester.includes(oldCourseList[i].semester[0]);
+              } else if (semester.length == 1 || oldCourseList[i].semester == 2) {
+                            testForBoth = oldCourseList[i].semester.includes(semester[0]);
+              } else {
+                            testForBoth = false;
+              }
 
-            if (tech.length != 0) {
-              for (var j = 0; j < oldCourseList[i].techniques.length; j++) {
-                // Find index of parenthesis
-                par = oldCourseList[i].techniques[j].indexOf("(")
-                if (par != -1) {
-                  teknik = oldCourseList[i].techniques[j].substr(0,par-1)
+              // Semester filter
+              if (testForBoth || semester.length == 0) {
+
+                if (tech.length != 0) {
+                  for (var j = 0; j < oldCourseList[i].techniques.length; j++) {
+                    // Find index of parenthesis
+                    par = oldCourseList[i].techniques[j].indexOf("(")
+                    if (par != -1) {
+                      teknik = oldCourseList[i].techniques[j].substr(0,par-1)
+                    } else {
+                      teknik = oldCourseList[i].techniques[j]
+                    }
+                    if (tech.includes(teknik)){
+                      newCourseList.push(oldCourseList[i]);
+                      found = true
+                      break
+                    }
+                  }
                 } else {
-                  teknik = oldCourseList[i].techniques[j]
-                }
-                if (tech.includes(teknik)){
                   newCourseList.push(oldCourseList[i]);
-                  found = true
-                  break
                 }
               }
-            } else {
-              newCourseList.push(oldCourseList[i]);
+
+
             }
           }
+
+
+
         }
       }
     }
@@ -300,6 +379,7 @@ function filterList(courselist) {
   createCourseList(newCourseList);
 }
 
+// Remove all filters, checkboxes, and load all courses in page
 function resetFilters() {
   checked = document.querySelectorAll('input[type=checkbox]:checked')
   for (var i = 0; i < checked.length; i++) {
@@ -310,6 +390,7 @@ function resetFilters() {
   createCourseList(courses);
 }
 
+// Activate/deactivate filter category dropdown arrow
 function toggleActive(element) {
   if (element.classList.contains('active')) {
     element.classList.remove('active')
@@ -322,6 +403,8 @@ function toggleActive(element) {
 
 createCourseList(courses);
 
-extractTechniques(courses)
+teks = extractTechniques(courses)
+addTechniques(teks)
 
-addTechniques(techniques)
+mods = extractModels(courses)
+addModels(mods)

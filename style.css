@@ -47,11 +47,6 @@ label {
   text-decoration: none;
 }
 
-/* .filter-title:before {
-  content: '\25B6';
-  padding-right: 1em;
-} */
-
 .inactive::before {
   content: '\25B6';
   padding-right: 1em;
@@ -75,8 +70,8 @@ label {
 }
 
 .buttons-div {
-margin-left: 15%;
-margin-bottom: 2em;
+margin-left: 3em;
+margin-bottom: 1em;
 }
 
 

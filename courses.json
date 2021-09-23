@@ -9,14 +9,14 @@ courses = [
     "techniques":[
       'Molecular biology',
       'Biochemistry',
-      'Cell culture',
+      'Cell culture (neuronal)',
       'Immunohistochemistry'
     ],
     "topics":[
       'Circadian rhythms in mammalian neurons'
     ],
     "models":[
-      'Neuronal cell culture (Mus musculus)'
+      'Mice (Mus musculus)'
     ],
     "location":"Niederrad",
     "semester":['Summer'],
@@ -122,7 +122,7 @@ courses = [
         'Electrophysiology (in vitro)',
         'Electrophysiology (in vivo)',
         'Calcium imaging',
-        'Cell culture',
+        'Cell culture (neuronal)',
         'Neuroanatomy',
         'Immunohistochemistry',
         'Microscopy (confocal)',
@@ -137,8 +137,8 @@ courses = [
       'Social behavior of bees'
     ],
     "models":[
-      'Honeybees (Apis mellifera)',
-      'Fruit fly (Drosophila melanogaster)'
+      'Honeybee (Apis mellifera)',
+      'Fruitfly (Drosophila melanogaster)'
     ],
     "location":"Riedberg",
     "semester":['Winter','Summer'],
@@ -158,7 +158,7 @@ courses = [
     "techniques":[
         'Genetic techniques',
         'Biochemistry',
-        'Cell culture (Primary, isolation from mice)',
+        'Cell culture (primary, endothelial)',
         'Transgenic techniques',
         'Immunohistochemistry',
         'Microscopy (confocal, fixed/live-cell)'
@@ -168,8 +168,7 @@ courses = [
       'Blood-brain-barrier morphogenesis'
     ],
     "models":[
-      'Mice (Mus musculus)',
-      'Endothelial cell culture (Mus musculus)'
+      'Mice (Mus musculus)'
     ],
     "location":"Niederrad",
     "semester":['Summer'],
@@ -190,7 +189,7 @@ courses = [
     "techniques":[
         'Genetic techniques',
         'Biochemistry',
-        'Cell culture (Primary, isolation from mice)',
+        'Cell culture (primary, neuronal)',
         'Transgenic techniques',
         'Immunohistochemistry',
         'Microscopy (confocal, fixed/live-cell)'
@@ -200,8 +199,8 @@ courses = [
       'Cell fate specification and differentiation'
     ],
     "models":[
-      'Mice embryos (Mus musculus)',
-      'Chicken embryos (Gallus gallus domesticus)'
+      'Mice (Mus musculus)',
+      'Chicken (Gallus gallus domesticus)'
     ],
     "location":"Niederrad",
     "semester":['Summer'],
@@ -350,7 +349,7 @@ courses = [
     "techniques":[
         'Genetic techniques (mice)',
         'Immunohistochemistry',
-        'Cell culture',
+        'Cell culture (neuronal/endothelial)',
         'Microscopy',
         'Biochemistry',
         'Genetic techniques (zebrafish)',
@@ -420,7 +419,7 @@ courses = [
         'Genetic techniques (demo)',
         'Biochemistry',
         'Immunohistochemistry',
-        'Cell culture',
+        'Cell culture (neuronal)',
         'Microscopy',
         'Microscopy (in vivo 2-photon, DEMO)',
         'Image processing',
@@ -431,8 +430,7 @@ courses = [
       'Comorbidity of Alzheimer\'s disease and neurovascular diseases'
     ],
     "models":[
-      'Mice (Mus musculus)',
-      'Cell culture (Mus musculus)'
+      'Mice (Mus musculus)'
     ],
     "location":"Riedberg",
     "semester":['Winter','Summer'],
@@ -519,7 +517,7 @@ courses = [
       'Disease models (in vivo/in vitro)',
         'Behavioral experiments (pain)',
         'Immunohistochemistry',
-        'Cell culture',
+        'Cell culture (neuronal)',
         'Calcium imaging',
         'Pharmacology',
         'Molecular biology',
@@ -530,13 +528,17 @@ courses = [
       'Pain and inflammation'
     ],
     "models":[
-      'Cell culture (Mus musculus)'
+      'Mice (Mus musculus)'
     ],
     "location":"Niederrad",
     "semester":['Summer'],
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/niederberger/'
-    ]
+    ],
+    "content":"The practical focuses on basic methods for investigating principle mechanisms of pain and inflammation. For this purpose, various animal and cell culture models are applied and, by the use of knock-out models or pharmacological intervention, novel treatment strategies are examined. The students perform individual studies under supervision. The results will be documented in a protocol and presented and discussed in a seminar talk at the end of the practical. The experiments comprise behavioral experiments with mice, tissue preparation, cultivation and stimulation of cells, preparation of protein and RNA from these materials, PCR und Western-Blot analysis."
+    ,
+    "objectives":"Familiarity with several of the following areas: various experimental pain models in mice, observing the behaviour of mice, preparing tissue for immunohistochemistry and Western blots, setting up neuronal cell culture, introduction to calcium imaging, measuring primary sensory neurons and pharmacological effects, learning about in vitro cell culture models for investigating the pharmacology of inflammatory mechanisms, measuring mediators of inflammation in a cell culture model, preparing one’s own results in the form of a talk and written protocol."
+
   },
 
   {
@@ -560,13 +562,17 @@ courses = [
       'Molecular basis of hippocampal plasticity'
     ],
     "models":[
-      'Organotypic slice culture (Mus musculus)'
+      'Mice (Mus musculus)'
     ],
     "location":"Niederrad",
     "semester":['Winter','Summer'],
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/deller/'
-    ]
+    ],
+    "content":"The practical course and seminars provide an interdisciplinary overview of neural plasticity in the hippocampus. The main topics of research comprise morphological and physiological responses of hippocampal neurons to CNS damage or neuronal (over-) stimulation, cellular network dynamics, as well as the underlying molecular mechanisms of hippocampal plasticity and homeostasis. To study these processes, we use the model of organotypic slice cultures of the hippocampus. Experimental techniques include optogenetic manipulation of cell activity, live-cell and fixed tissue imaging (confocal microscopy), immunocytochemistry, patch-clamp, pharmacology, and molecular biology methods. Students will learn appropriate techniques within a current research project, conduct their own experiments under supervision, and present their scientific work in a seminar talk. The accompanying seminars will give insights into relevant current publications, experimental models, and research methods and consider their relevance in clinical translation."
+    ,
+    "objectives":"Students will gain knowledge and training in basic anatomical and physiological techniques, cell culture, and confocal microscopy and learn how to work on scientific questions based on relevant publications."
+
   },
 
   {
@@ -586,14 +592,17 @@ courses = [
       'Autophagy in cerebral ischemia'
     ],
     "models":[
-      'Rats (Rattus norvegicus)',
-      'Cell culture (Rattus norvegicus)'
+      'Rats (Rattus norvegicus)'
     ],
     "location":"Niederrad",
     "semester":['Summer'],
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/deller/'
-    ]
+    ],
+    "content":"The practical involves experiments using the following methods: cultivating neuronal cells (primary cells and neuronal cell lines), inducing ischemia in vivo in rats, in vitro hypoxia/ischemia, application of further stress stimuli in vitro, assessing neuronal cell death and neuroprotection by cytokines and pharmaceuticals in vitro and in vivo, detecting proteins and other compounds in the cell using fluorescence and laser scanning microscopy, transcriptional stress responses in neurons as well as transfection techniques and live cell imaging."
+    ,
+    "objectives":"Familiarity with cell culture techniques and molecular biological techniques in experimental neurosciences, knowledge about anesthetising and surgical approaches in animal experiments, learning how to work on scientific questions based on relevant publications."
+
   },
 
   {
@@ -618,13 +627,17 @@ courses = [
       'Ataxia teleaniectasia'
     ],
     "models":[
-      'Human children (Homo sapiens)'
+      'Humans (Homo sapiens)'
     ],
     "location":"Niederrad",
     "semester":['Winter'],
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/kieslich/'
-    ]
+    ],
+    "content":"The practical investigates neurological questions in children. The main themes are developmental neurobiology in the first year of life, applied neurophysiology in children, neuropaedriatric medicine including epilepsy syndromes and neurotraumatology. The students take part in relevant investigations, write up an experimental protocol and present their results in the form of a seminar talk. They give an additional seminar talk on recent original research papers."
+    ,
+    "objectives":"Familiarity with standard methods in clinical neuropaediatry, acquiring experience in handling patients as well as classifying typical clinical symptoms, learning how to work on scientific questions based on relevant publications."
+
   },
 
   {
@@ -648,7 +661,11 @@ courses = [
     "semester":['Winter','Summer'],
     "links":[
       'https://www.izn-frankfurt.de/'
-    ]
+    ],
+    "content":"The practical provides an introduction to basic image analysis, image interpretation and acquiring data by examining the CNS (cerebral and spinal) with neuroradiological imaging procedures. The following procedures are used: molecular resonance tomography (MRT) of the head and spinal column, computer tomography (CT) of the skull and spinal column, digital cerebral and spinal subtraction angiography (DSA) as well as an introduction to basic neuroradiological intervention measures. In addition, the practical presents the theoretical / physical background to individual analysis procedures in neuroradiology focussing on nuclear resonance tomography. This will deal with the physical basis of MRT / image composites, sequences and sequence parameters of MRT, diffusion and perfusion weighted MRT imaging, tractography (fibre tracking), functional MRT (fMRT), nuclear resonance spectroscopy analysis (MR spectroscopy). The students compile a written protocol on the investigations carried out and present this along with the theoretical background in the form of a seminar talk."
+    ,
+    "objectives":"Familiarity with neuroanatomy (cerebral/spinal) as well as the skull and spinal column; basic knowledge about relevant neurological diseases. Learning about indications for neuroradiological examination, acquiring and interpreting images as well as assigning them to typical individual clinical pictures."
+
   },
 
   {
@@ -678,7 +695,11 @@ courses = [
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/baumann/',
       'https://www.kgu.de/index.php?id=108'
-    ]
+    ],
+    "content":"The practical teaches most important basics of objective and subjective audiometric measurement techniques to assess hearing disorders. Pure tone and speech audiometry as well as clinical application of otoacoustic emissions, impedance measurements of the eardrum, and different methods of auditory brainstem response recording (BERA, CERA, ASSR, MMN) shall be demonstrated. The fitting of implantable hearing aids and cochlear implants will be shown in different patients. Intra-operative assessment of neuro-physiological auditory responses will be also part of the practical. The students work on their own projects with supervision, and present their results in the form of a seminar talk. In a further seminar talk they present an original piece of research from the field of neuro-physiological stimulation/recording of auditory responses. They learn how to present scientific work through writing up an appropriate result protocol. The main topics are: psychoacoustic measurements of auditory perception with electrical stimulation by means of cochlear implants, investigation of different recording techniques to assess frequency specific responses of the auditory system, use of computer/software in evaluating data and generating stimuli."
+    ,
+    "objectives":"Familiarity with carrying out psycho-acoustical experiments, measuring auditory brainstem responses, basics of audiometry, learning how to work on scientific questions based on relevant publications."
+
   },
 
   {
@@ -711,7 +732,11 @@ courses = [
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/slattery/',
       'https://www.kgu.de/einrichtungen/kliniken/zentrum-fuer-psychische-gesundheit/psychiatrie-psychosomatik-und-psychotherapie/team/professuren/prof-dr-david-slattery/'
-    ]
+    ],
+    "content":"The aim of this practical is to introduce students to a wide-range of experimental techniques that are used to study psychiatric disorders from the bench to the bedside. The wide variety of translational projects that students can participate in include cell culture techniques to functionally evaluate gene candidates identified from studies in large cohorts of patients, the assessment of the effect of drug targeted, viral vector targeted or knockout mice in behavioural tests relevant for psychiatric disorders. After such experiments, a variety of immunohistochemical and histological characterisations are performed. There is also the possibility to gain insight into how neuroimaging methods, such as functional magnetic resonance imaging, electroencephalography and magnetoencephalography are used to assess aberrant neural processing and coordination in psychiatric disorders"
+    ,
+    "objectives":"Students will receive training in a range of molecular and behavioural techniques commonly used to study psychiatric disorders and design experiments using the knowledge gained. They will also receive basic knowledge about the disorders, particularly mood and anxiety disorders, schizophrenia and attention-deficit hyperactivity disorder, in a series of seminars and journal clubs (including the option to participate in case presentations)."
+
   },
 
   {
@@ -741,7 +766,11 @@ courses = [
     "semester":['Winter','Summer'],
     "links":[
       'https://www.researchgate.net/profile/Andreas-Chiocchetti'
-    ]
+    ],
+    "content":"After attending this practical the students will know and be able to autonomously implement basic cell-biological techniques to study genetic variants in human neuronal cell models. These techniques include cell culture methods to study neuronal differentiation and to genetically modify DNA sequences using CRISPR/Cas9 as well as fluorescence and luciferase luminescence assays. After modification of the human neuronal progenitor cell lines several immuno-histochemical and morphological assays can be adapted to study and statistically analyze the hypothesized effects. In addition we offer basic insights into genome and transcriptome analysis."
+    ,
+    "objectives":"The state of the art molecular and cell-biological methods will be introduced to the students to analyze human neurons in vitro. This knowledge will be implemented by the students within an individual project designed together with the students. At the end of the practical experience the students will have the know-how to use human neuronal progenitor cell lines as cellular model for psychiatric disorders. In addition, within optional seminars and journal clubs, also in close collaboration with the adult psychiatry, the student can expand their current knowledge about underlying psychiatric conditions such as Autism Spectrum Disorder, Attention-DeficitHyperactivity-Disorder or Conduct Disorder."
+
   },
 
   {
@@ -768,7 +797,11 @@ courses = [
     "links":[
       'https://scholar.google.de/citations?user=GYubNyUAAAAJ',
       'https://gcsc.uni-frankfurt.de/simulation-and-modelling'
-    ]
+    ],
+    "content":"This module is equivalent to the module M-SIM 1: Modellierung und Simulation 1, offered in the Master course “Informatics”, Faculty 12 (Computer Science and Mathematics). It consists of a lecture (SIM1) and a practical course (SIM1-MPR). The lecture imparts: 1) Introduction to vector analysis: functions of several variables, derivatives and integrals, integral theorems. 2) Modeling: Modeling approaches, conservation equations, constitutive relations. 3) Simulation methods: a) Finite-difference methods for ordinary differential equations: consistency, convergence, stability. b) Discretisation methods for partial differential equations: Finite differences, finite elements. The practical offers complementary programming work to the lecture."
+    ,
+    "objectives":"Familiarity with the basics of modelling and numerical simulation"
+
   },
 
   {
@@ -798,7 +831,10 @@ courses = [
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/jedlicka/',
       'https://sites.google.com/site/peterjedlicka/'
-    ]
+    ],
+    "content":"The practical and seminars provide an overview of computational and mathematical modeling of neural systems specifically focusing on modeling neurons and networks of the hippocampus. The course is an entry to the theoretical methods and approaches used to model the brain at different levels, ranging from synapses and dendrites to neurons and neural circuits. The aim is to learn standard techniques for building, managing, and using models that are closely linked to experimental data, especially those that involve hippocampal cells with complex anatomical and biophysical properties. Computational (in silico) experiments include large-scale network simulations in biophysically realistic and data-driven models of the hippocampus as well as single-cell simulations in morphologically reconstructed hippocampal neurons. In the accompanying seminars, the relevance of computational models for understanding the function of the brain is discussed using examples from recent research papers."
+    ,
+    "objectives":"basic cable and network modeling techniques; learning how to use NEURON (software for for empirically-based simulations of neurons and networks of neurons, http://www.neuron.yale.edu/neuron/); learning how to work on scientific questions based on relevant publications."
   },
 
   {
@@ -827,7 +863,11 @@ courses = [
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/kell/',
       'http://www.brainclocks.com/interests.php'
-    ]
+    ],
+    "content":"The module introduces students on neural networks (cortical and subcortical) which are important for cognitive and sensomotoric processing. A main focus lies in the investigation of hemispheric lateralisation, mainly concerning linguistic processing and motor control of movements of the hand. Healthy volunteers and patients are examined in view of their behavioral reactions and under use of electric and magneto-encephalographic techniques. In addition, electrocorticographic data are raised by patients during brain operations. The students get familiarized with the used methods and acquire knowledge on the organisation principles of neural networks. The students will work on a specific fMRI case study in the first week of the module and then carry out behavioral tests and imaging experiments independently or under instructions as well as visit weekly seminars."
+    ,
+    "objectives":"Acquisition and analysis of human functional imaging or neurophysiological data (patients and/or healthy controls). Learning how to work on scientific questions based on relevant publications."
+
   },
 
   {
@@ -856,7 +896,11 @@ courses = [
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/cuntz/',
       'https://www.treestoolbox.org/hermann/'
-    ]
+    ],
+    "content":"Based on neuroanatomical data from recent advances in microscopy and genetic techniques, we will generate models with a main focus on dendritic and axonal interactions. We will use image processing tools and quantitative analysis methods in the computer to digitise various anatomic components from microscopy image stacks. In their digital form, measured geometric properties can be matched to corresponding biophysical principles. For example, we can observe and measure the formation of neural circuits during development by using time-lapse imaging series. The measured structure of dendrites and axons then enables conclusions about connectivity and function in those circuits. The observed principles will then be tested in simple quantitative models. The module Computational Neuroanatomy will therefore bridge the way from data analysis to the generation of a scientific theory using simple computer models."
+    ,
+    "objectives":"The participants will learn to handle biological data using quantitative methods (incl. the usage of Matlab). They will further learn to generate simple models that reproduce the trends observed in these data. The projects will be selected to match the current research focus in the lab."
+
   },
 
   {
@@ -884,7 +928,11 @@ courses = [
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/triesch/',
       'https://www.fias.science/en/neuroscience/research-groups/jochen-triesch/'
-    ]
+    ],
+    "content":"This lab course offers an introduction to the design and implementation of computer models of neural networks and the modeling of neuronal plasticity mechanisms. The course is a practical introduction to central methods of Computational Neuroscience, which investigates the functioning of the brain at multiple levels with the help of computational models. Participants implement and analyze standard neuron models and network architectures. The focus is on the role of plasticity mechanisms, their impact on network dynamics and their role in learning. The benefits and limitations of computer models for understanding brain function are discussed in the context of examples from the literature. Participants present their results in a talk and prepare a final report."
+    ,
+    "objectives":"Participants learn how to implement computer models of neural networks as well as different plasticity mechansisms and learning approaches. They learn to address a scientific question in the context of relevant literature"
+
   },
 
   {
@@ -911,7 +959,11 @@ courses = [
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/tchumatchenko/',
       'https://brain.mpg.de/tchumatchenko'
-    ]
+    ],
+    "content":"Our aim will be to understand how connectivity and the spiking dynamics of individual neurons interact to give rise to complex collective phenomena such as information transmission, oscillations, or wave emergence in a neural network. We will use spiking neurons in computer simulations and pen-and-paper calculations to predict the dynamics emerging in a given network. Specifically, the students will write own code and will mostly work on new, open scientific problems that are not part of the textbook knowledge. The module Computational neural dynamics will therefore teach students to formulate own models, learn to solve or simulate these models, and teach them how to evaluate the findings and compare them to known biological observations. Among the effects, which we will include in the spiking network models, will be synaptic plasticity, firing rate adaptation, or different connectivity profiles."
+    ,
+    "objectives":"The participants will learn how to solve differential equations and write own computer code, e.g. in Python, C or Matlab. They will learn how to distill minimal theoretical models from physiological observations and published research. The student projects will be aligned with the ongoing research in the Tchumatchenko lab."
+
   },
 
   {
@@ -941,7 +993,11 @@ courses = [
     "links":[
       'https://brain.mpg.de/gjor',
       'https://brain.mpg.de/gjor'
-    ]
+    ],
+    "content":"This module will focus on understanding the principles guiding the formation of sensory maps and receptive fields during the development of sensory circuits. The students will obtain an overview of existing models of the development of topography, ocular dominance columns, orientation and direction selectivity in the visual cortex. We will examine how different mechanisms including: emergence of diverse single neuron properties and activity-dependent synaptic plasticity interact during development to give rise to functional circuits. In addition to synaptic plasticity, which is more commonly studied, the focus will be on the role of the specific biophysical properties at the single neuron level. The students will have the opportunity to analyze (electrophysiological or Calcium imaging) data from visual cortex and build their own models of the assembly and tuning of developing neuronal circuits."
+    ,
+    "objectives":"Students will learn to analyze and interpret neural data, build and simulate computational models (e.g. in C, Matlab, or Python), and analyze model results in relation to experiments. Acquired skills include: statistical analysis, computer programming and simulations."
+
   },
 
   {
@@ -972,7 +1028,11 @@ courses = [
     "links":[
       'https://www.izn-frankfurt.de/en/mitglied/vo/',
       'https://www.scenegrammarlab.com/research/'
-    ]
+    ],
+    "content":"This practical course provides an introduction to conducting research in Human Cognitive Science also known as Cognitive Psychology. In particular, students taking part will be able to gather hands-on experience in designing, programming, executing and analysing experiments in the areas of visual attention, scene perception, and memory. Depending on currently ongoing projects in the “Scene Grammar Lab”, the students can participate in neurocognitive studies using techniques such as EEG, eye tracking (both stationary and mobile ET glasses), and/or psychophysics. At the end of this practical course the students will have learned about the theoretical background of the projects, as well as data acquisition, data analysis, and interpretation of results. While we expect the students to work independently, the various members of the lab will be there to help where possible. As part of our weekly lab colloquium, students will be able to learn about other ongoing projects and will have the opportunity to present their work in this informal setting. At the end of the course, students are expected to write a brief paper (intro, methods, results, discussion) on the study they were working on."
+    ,
+    "objectives":"Reading up on theoretical backgrounds in the field of attention, perception, and memory, learning methods of experimental psychology, basics of acquisition and analysis of (neuro-)cognitive data, performing basic statistical analyses and writing a scientific paper."
+
   },
 
   {
@@ -998,14 +1058,18 @@ courses = [
     ],
 
     "models":[
-      'Animals'
+      'Zoo animals'
     ],
     "location":"Riedberg",
     "semester":['Summer'],
     "links":[
       'https://www.bio.uni-frankfurt.de/43969445/abtdierkes',
       'https://www.bio.uni-frankfurt.de/43969445/abtdierkes'
-    ]
+    ],
+    "content":"The module consists of a seminar, an internship and excursion. Fundamental aspects and current issues of Zoology are taught in the seminar at the beginning based on original work, which will be presented by the students and then discussed as a group. The excursion to various zoos and a research internship in the 'Opel Zoo' serve to solidify theoretical principles. The focus will be on ecological, physiological and ethological research. Other topics include: historical development of zoos, zoos & conservation, population biology & breeding programs at the zoo, animal husbandry (nutrition, behaviour, enrichment, mixed species exhibits), veterinary fundamentals, organization and structural development, enclosure design and planning, education at the Zoo. The methodological approach to the practical components depends on the selected research focus, with classical to modern methods of behaviour research available. They may include laboratory activities (microscopic and physiological studies) and imaging techniques (such as thermographic measurements with infrared cameras or video analysis with high-speed cameras). The students present their results at the end of the module in the form of an oral presentation. In a further lecture they learn to critically appraise original work at the 'Opel Zoo'. These presentations will be held in English and students are given detailed feedback in terms of content and structure. By drafting a protocol in the form of a paper they become acquainted with the writing of a scientific publication. Following a detailed briefing on the methodology, planning, implementation, logging and analysis of the original data will be completed by the students independently."
+    ,
+    "objectives":"The students acquire basic principles in the field of zoo biology (behaviour research in the zoo, enrichment, husbandry, conservation aspects), as well as the application of modern imaging techniques. You will learn methodology for the implementation of behavioural studies and how to address scientific problems while bearing in mind current concepts in the relevant literature."
+
   }
 
 ]
