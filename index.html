@@ -15,7 +15,7 @@
   </head>
   <body>
 
-    <div class="grid">
+    <div class="main">
 
       <div class="filtertitle">
         <h3>Filters</h3>
@@ -23,13 +23,14 @@
       <div class="coursestitle">
         <h3>Courses</h3>
       </div>
-      <div class="scheduletitle">
-        <h3>Schedule</h3>
+      <div class="semesterstitle">
+        <h3>Semesters</h3>
       </div>
 
       <div class="filters-div">
         <div class="buttons-div" id="buttons">
-          <button type="button" name="apply" id="apply" onclick="filterList(courses);"><span>Apply Filters</span></button>
+
+          <button type="button" name="apply" id="apply" onclick="filterList();"><span>Apply Filters</span></button>
           <button type="button" name="reset" id="reset" onclick="resetFilters();"><span>Reset Filters</span></button>
         </div>
         <div class="filter-div" id="cousetype-div">
@@ -128,17 +129,104 @@
           <button type="button" name="apply" id="apply" onclick="filterList(courses);"><span>Apply Filters</span></button>
           <button type="button" name="reset" id="reset" onclick="resetFilters();"><span>Reset Filters</span></button>
         </div>
+        <!-- <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+          <p class="switchdesc">AND selection</p>
+        </label> -->
       </div>
       <div class="courses-div">
 
 
       </div>
-      <div class="right">
+      <div class="semesters-div">
+        <div class="semester-boxes">
+          <div class="sem-boxx" id="winter1">
+            Winter 1
+            <ul class="diocane">
+              <li>Basic Methods in Neuroscience</li>
+              <li>Neuroscience I</li>
+              <li>Other stuff (Seminars etc.)</li>
+            </ul>
+          </div>
+          <div class="sem-box dropzone" id="winter2">
+            Winter 2
+            <div class="slots-div" id="winter2slots">
+                <div class="slot" id="slot1">
+                  1st choiche
+                  <div class="slot-content">
+                    <h3 class="choice" id="c1w2"></h3>
+                  </div>
+                </div>
+                <div class="slot" id="slot2">
+                  2nd choiche
+                  <div class="slot-content">
+                    <h3 class="choice" id="c2w2"></h3>
+                  </div>
+                </div>
+                <div class="slot" id="slot3">
+                  3rd choiche
+                  <div class="slot-content">
+                    <h3 class="choice" id="c3w2"></h3>
+                  </div>
+                </div>
+            </div>
+            <p class="instructions" id="inst1">Double click to remove course</p>
+          </div>
+          <div class="sem-box dropzone" id="summer1">
+            Summer 1
+            <div class="slots-div" id="winter2slots">
+                <div class="slot" id="slot1">
+                  1st choiche
+                  <div class="slot-content">
+                    <h3 class="choice" id="c1w2"></h3>
+                  </div>
+                </div>
+                <div class="slot" id="slot2">
+                  2nd choiche
+                  <div class="slot-content">
+                    <h3 class="choice" id="c2w2"></h3>
+                  </div>
+                </div>
+                <div class="slot" id="slot3">
+                  3rd choiche
+                  <div class="slot-content">
+                    <h3 class="choice" id="c3w2"></h3>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="sem-box dropzone" id="summer2">
+            Summer 2
+            <div class="slots-div" id="winter2slots">
+                <div class="slot" id="slot1">
+                  1st choiche
+                  <div class="slot-content">
+                    <h3 class="choice" id="c1w2"></h3>
+                  </div>
+                </div>
+                <div class="slot" id="slot2">
+                  2nd choiche
+                  <div class="slot-content">
+                    <h3 class="choice" id="c2w2"></h3>
+                  </div>
+                </div>
+                <div class="slot" id="slot3">
+                  3rd choiche
+                  <div class="slot-content">
+                    <h3 class="choice" id="c3w2"></h3>
+                  </div>
+                </div>
+            </div>
+          </div>
 
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+
       </div>
-
     </div>
+
+
+
 
     <div class="scripts">
       <script type="text/javascript "src="courses.json"></script>

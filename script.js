@@ -43,7 +43,13 @@ function makeList(listData,parentDiv,titleName) {
 // Create an HTML element of the given TYPE, CLASS, ID, innerHTML, PARENT ELEM
 function createItem(type,className,id,textHTML,parent) {
   item = document.createElement(type);
-  item.classList.add(className);
+  if (Array.isArray(className)) {
+    for (var i = 0; i < className.length; i++) {
+     item.classList.add(className[i]);
+    }
+  } else {
+    item.classList.add(className);
+  }
   item.setAttribute("id",id);
   if (textHTML != undefined) {
     item.innerHTML = textHTML;
@@ -56,6 +62,12 @@ function createItem(type,className,id,textHTML,parent) {
 
 // Create the list of course elements given a list of courses (filtered/unf)
 function createCourseList(courseData) {
+
+  if (document.getElementById('courses') != null) {
+    document.getElementById('courses').remove();
+  } else {
+    console.log('ur awesomes');
+  }
 
   // Make a container element for the course list and add it to the page
   listContainer = createItem('div','container','courses')
@@ -72,10 +84,15 @@ function createCourseList(courseData) {
 
     // Create course
     courseItem = createItem('div','course',courseData[i].code)
+    // courseItem.setAttribute('draggable','true')
+    // courseItem.setAttribute('ondragstart','onDragStart(event);')
 
             // Add ID item
             courseID = createItem('div','code','code'+courseData[i].code,courseData[i].code)
+            courseID.classList.add('draggable')
+            courseID.setAttribute('draggable','true')
             courseItem.appendChild(courseID)
+
 
             // Add NAME item
             content = '<a class="showdesc" id="desctoggle" href="#'+courseData[i].code+'desc" data-toggle="collapse">'+courseData[i].name+ '</a>'
@@ -96,7 +113,7 @@ function createCourseList(courseData) {
     courseDescContainer = createItem('div','collapse', courseData[i].code+'desc');
     courseElement.appendChild(courseDescContainer)
 
-      // Actual container
+      // DESCRIPTION container
       courseDesc = createItem('div','description', courseData[i].code+'description');
       courseDescContainer.appendChild(courseDesc)
 
@@ -139,6 +156,12 @@ function createCourseList(courseData) {
               courseDesc.appendChild(b)
             }
 
+            // ShowFullDesc
+            showfully = createItem('a','nulla','showFullDesc','Show full description')
+            showfully.setAttribute('data-toggle','collapse')
+            showfully.setAttribute('href','#'+courseData[i].code+'fulldCollapse')
+            courseDesc.appendChild(showfully)
+
             // Change colors depending on course type
             if (courseData[i].code.includes('A')) {
 
@@ -158,7 +181,31 @@ function createCourseList(courseData) {
             }
 
 
+          // FULL DESCRIPTION Collapsible div
+          fullDescCollapse = createItem('div','collapse', courseData[i].code+'fulldCollapse');
+          courseDescContainer.appendChild(fullDescCollapse)
+
+              // Full description DIV
+              courseFullDesc = createItem('div','full-description', courseData[i].code+'full-description');
+              fullDescCollapse.appendChild(courseFullDesc)
+
+                // CONTENT-TITLE
+                courseContentTitle = createItem('div','fulldesc-title', courseData[i].code+'content-title','Content');
+                courseFullDesc.appendChild(courseContentTitle)
+                // CONTENT-TITLE
+                courseContentTitle = createItem('div','fuldesc-stuff', courseData[i].code+'content-stuff',courseData[i].content);
+                courseFullDesc.appendChild(courseContentTitle)
+                // CONTENT-TITLE
+                courseContentTitle = createItem('div','fulldesc-title', courseData[i].code+'objectives-title','Objectives');
+                courseFullDesc.appendChild(courseContentTitle)
+                // CONTENT-TITLE
+                courseContentTitle = createItem('div','fuldesc-stuff', courseData[i].code+'objectives-stuff',courseData[i].objectives);
+                courseFullDesc.appendChild(courseContentTitle)
+
   }
+
+
+  addEventListeners();
 }
 
 // Extract the techniques from the JSON file of courses (only launched at the start)
@@ -169,7 +216,7 @@ function extractTechniques(courseData) {
   for (var i = 0; i < courseData.length; i++) {
     // For each technique
     for (var j = 0; j < courseData[i].techniques.length; j++) {
-      // Extract lowercase name
+      // Extract name
       name = courseData[i].techniques[j]
       try {
         courseData[i].techniques[j].toLowerCase()
@@ -276,11 +323,10 @@ function addModels(models){
 }
 
 // Apply filters to the course list. Generates newCourseList
-function filterList(courselist) {
+function filterList() {
   checked = document.querySelectorAll('input[type=checkbox]:checked')
-  oldCourseList = courselist;
+  oldCourseList = courses;
   newCourseList = [];
-
   // Only filter if there are checkboxes
   if (checked.length != 0) {
     courseType  = [];
@@ -311,10 +357,6 @@ function filterList(courselist) {
           console.log('default-switch')
       }
     }
-
-    // Remove all courses, before adding filtered ones
-    el = document.getElementById('courses');
-    el.remove();
 
     // Iterate through ALL COURSES
     for (var i = 0; i < oldCourseList.length; i++) {
@@ -361,22 +403,30 @@ function filterList(courselist) {
                   newCourseList.push(oldCourseList[i]);
                 }
               }
-
-
             }
           }
-
-
-
         }
       }
     }
   } else {
-    el = document.getElementById('courses');
-    el.remove();
-    newCourseList = oldCourseList;
+    filteredList = oldCourseList;
   }
-  createCourseList(newCourseList);
+  filteredList = newCourseList;
+
+  // Rewrite CURRENT COURSE LIST without selection
+  newCourseList = [];
+  filteredList.forEach(course => {
+    if (selectedCourses.includes(course)) {
+      console.log(course.code);
+    } else {
+      newCourseList.push(course)
+    }
+  });
+  currentCourseList = newCourseList;
+
+
+
+  createCourseList(currentCourseList);
 }
 
 // Remove all filters, checkboxes, and load all courses in page
@@ -385,9 +435,20 @@ function resetFilters() {
   for (var i = 0; i < checked.length; i++) {
     checked[i].checked = false;
   }
-  el = document.getElementById('courses');
-  el.remove();
-  createCourseList(courses);
+
+  filteredList = courses;
+
+  // Rewrite CURRENT COURSE LIST without selection
+  newCourseList = [];
+  filteredList.forEach(course => {
+    if (selectedCourses.includes(course)) {
+      console.log(course.code);
+    } else {
+      newCourseList.push(course)
+    }
+  });
+  currentCourseList = newCourseList;
+  createCourseList(currentCourseList);
 }
 
 // Activate/deactivate filter category dropdown arrow
@@ -401,10 +462,136 @@ function toggleActive(element) {
   }
 }
 
-createCourseList(courses);
+function dragStart(ev) {
+  console.log('dragstart');
+  ev.dataTransfer.dropEffect = "copy";
+  ev.dataTransfer.setData("text", ev.target.id);
 
-teks = extractTechniques(courses)
+}
+
+function dragEnter() {
+  console.log('dragenter');
+  this.classList.add('over');
+}
+
+function dragLeave() {
+  console.log('dragleave');
+  this.classList.remove('over');
+}
+
+function dragOver(ev) {
+  console.log('dragover');
+  ev.preventDefault();
+}
+
+function dragDrop(ev) {
+
+  console.log('drop');
+
+
+  // Allow removal of course from slot  (dobleclick)
+  this.setAttribute('ondblclick','removeItem(this);')
+
+
+  // Read dropped element data (course code)
+  data = ev.dataTransfer.getData("text");
+  element = document.getElementById(data)
+
+  // Edit HTML and CSS of filled slot
+  this.classList.remove('over');
+  this.classList.add('filled');
+  color = element.style.color;
+  this.style.color = color;
+  // bg = element.parentElement.style.backgroundColor;
+  // this.style.backgroundColor = bg;
+  this.innerHTML = element.innerHTML;
+
+  // Find selected course from full course list
+  selectedOne = courses.find(({ code }) => code === element.innerText)
+
+  // Add course to selection
+  selectedCourses.push(selectedOne)
+
+  // Rewrite CURRENT COURSE LIST without selection
+  newCourseList = [];
+  filteredList.forEach(course => {
+    if (selectedCourses.includes(course)) {
+      console.log(course.code);
+    } else {
+      newCourseList.push(course)
+    }
+  });
+  currentCourseList = newCourseList;
+  createCourseList(currentCourseList);
+
+}
+
+function removeItem(item) {
+
+  returnCourse = courses.find(({ code }) => code === item.innerText)
+
+  const idx = selectedCourses.indexOf(returnCourse)
+  if (idx > -1) {
+    selectedCourses.splice(idx,1)
+  }
+
+  // Rewrite CURRENT COURSE LIST without selection
+  newCourseList = [];
+  filteredList.forEach(course => {
+    if (selectedCourses.includes(course)) {
+      console.log(course.code);
+    } else {
+      newCourseList.push(course)
+    }
+  });
+  currentCourseList = newCourseList;
+  createCourseList(currentCourseList);
+
+  // Change CSS and HTML
+  switch (item.id) {
+    case 'slot1':
+      item.innerHTML = '1st choice'
+      break;
+    case 'slot2':
+      item.innerHTML = '2nd choice'
+      break;
+    case 'slot3':
+      item.innerHTML = '2nd choice'
+      break;
+  }
+  item.classList.remove('filled')
+  item.style.color = '#dbdbdb'
+}
+
+
+function addEventListeners() {
+  const draggables = document.querySelectorAll('.draggable')
+
+  draggables.forEach(draggable => {
+    draggable.addEventListener('dragstart',dragStart)
+  });
+
+  const slots = document.querySelectorAll('.slot')
+
+  slots.forEach(slot => {
+    slot.addEventListener('dragenter',dragEnter)
+    slot.addEventListener('dragover',dragOver)
+    slot.addEventListener('dragleave',dragLeave)
+    slot.addEventListener('drop',dragDrop)
+  });
+
+
+}
+
+
+filteredList = courses;
+selectedCourses = [];
+currentCourseList = courses;
+
+createCourseList(currentCourseList);
+
+teks = extractTechniques(currentCourseList)
 addTechniques(teks)
 
-mods = extractModels(courses)
+mods = extractModels(currentCourseList)
 addModels(mods)

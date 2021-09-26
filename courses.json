@@ -9,8 +9,9 @@ courses = [
     "techniques":[
       'Molecular biology',
       'Biochemistry',
-      'Cell culture (neuronal)',
-      'Immunohistochemistry'
+      'Cell culture',
+      'Immunohistochemistry',
+      'Neuroanatomy'
     ],
     "topics":[
       'Circadian rhythms in mammalian neurons'
@@ -43,7 +44,7 @@ courses = [
       'Noiciception'
     ],
     "models":[
-      'Nematode worm (Caenorhabditis elegans)'
+      'Roundworm (Caenorhabditis elegans)'
     ],
     "location":"Riedberg",
     "semester":['Winter','Summer'],
@@ -61,11 +62,13 @@ courses = [
     "name":"Neuropharmacology",
     "coordinators":["Prof. Jochen Klein"],
     "techniques":[
+        'Disease models (in vivo, Stroke/Alzheimer\'s)',
         'Pharmacology',
         'Microdialysis (in vivo)',
-        'HPLC',
-        'Biochemistry'
+        'Analytical chemistry (HPLC)',
+        'Biochemistry (enzymatic assays)'
       ],
+
     "topics":[
       'Central cholinergic system in Alzheimer\'s disease',
       'Metabolism in ischemic and stroke conditions'
@@ -248,6 +251,7 @@ courses = [
     "name":"Auditory Function and Dysfunction: Behavior and Physiology",
     "coordinators":["PD Dr. Bernhard Gaese"],
     "techniques":[
+      'Study design',
         'Animal handling',
         'Surgery',
         'Pharmacology',
@@ -350,13 +354,13 @@ courses = [
         'Genetic techniques (mice)',
         'Immunohistochemistry',
         'Cell culture (neuronal/endothelial)',
-        'Microscopy',
-        'Biochemistry',
+        'Microscopy (immunofluorescence, confocal)',
+        'Biochemistry (electrophoresis, blotting)',
         'Genetic techniques (zebrafish)',
-        'Microscopy',
-        'Embryo manipulation',
+        'Microscopy (epifluorescence/stereo)',
+        'Molecular biology (embryo manipulation)',
         'Behavioral experiments',
-        'Data Analysis'
+        'Data analysis'
       ],
 
     "topics":[
@@ -484,8 +488,8 @@ courses = [
     "coordinators":["Prof. Georg Auburger"],
     "techniques":[
         'Disease models (in vivo, Parkinson\'s/Ataxia)',
-        'Motor/behavioral analysis',
-        'Disease progression analysis',
+        'Clinical evaluation (Motor/behavioral analysis)',
+        'Clinical evaluation (Disease progression analysis)',
         'Data analysis',
         'Genetic techniques',
         'Molecular biology',
@@ -610,12 +614,11 @@ courses = [
     "name":"Clinical Paediatric Neurology",
     "coordinators":["Prof. Dr. Matthias Kieslich"],
     "techniques":[
-        'Developmental neurological evaluation',
-        'Neuropsychological evaluation',
-        'Electroencephalography (EEG)',
-        'Evoked-potentials',
-        'Neurography',
-        'Sonography'
+        'Clinical evaluation (Developmental neurological)',
+        'Clinical evaluation (Neuropsychological)',
+        'Neuroimaging (EEG, Evoked-potentials)',
+        'Neuroimaging (Neurography)',
+        'Neuroimaging (Sonography)'
       ],
 
     "topics":[
@@ -645,9 +648,9 @@ courses = [
     "name":"Clinical Neuroimaging",
     "coordinators":["Prof. Dr. Joachim Berkefeld"],
     "techniques":[
-        'Molecular resonance tomography (MRT)',
-        'Computed tomography (CT)',
-        'Digital subtraction angiography (DSA)',
+        'Neuroimaging (Molecular resonance tomography [MRT])',
+        'Neuroimaging (Computed tomography [CT])',
+        'Neuroimaging (Digital subtraction angiography [DSA])',
       ],
 
     "topics":[
@@ -673,10 +676,10 @@ courses = [
     "name":"Clinical Auditory Neuroscience",
     "coordinators":["Prof. Uwe Baumann"],
     "techniques":[
-        'Psychoacoustics',
-        'Brainstem recording techniques',
-        'Audiometry',
-        'Hearing aids and implants',
+        'Clinical audiology (Psychoacoustics)',
+        'Clinical audiology (Brainstem recording techniques)',
+        'Clinical audiology (Audiometry)',
+        'Clinical audiology (Hearing aids and implants)',
         'Statistics',
         'Data analysis',
         'Programming'
@@ -746,10 +749,9 @@ courses = [
     "techniques":[
         'Disease models (in vitro, ASD/ADHD/CD)',
         'Cell culture',
-        'Genetics',
-        'Molecular biology',
-        'CRISPR-Cas9',
-        'Fluorescence and luminescence assays',
+        'Genetic techniques',
+        'Molecular biology (incl. CRISPR-Cas9)',
+        'Biochemistry (light-based assays)',
         'Immunohistochemistry',
         'Microscopy'
       ],
@@ -778,9 +780,9 @@ courses = [
     "name":"Modelling and Simulation",
     "coordinators":["Prof. Gabriel Wittum"],
     "techniques":[
-        'Vector analysis',
-        'Mathematical modeling',
-        'Simulation techniques (ODEs/PDEs)'
+        'Mathematical modeling (Vector analysis)',
+        'Mathematical modeling (conservation equations, constitutive relations)',
+        'Mathematical modeling (Simulation techniques ODEs/PDEs)'
       ],
 
     "topics":[
@@ -809,9 +811,11 @@ courses = [
     "name":"Virtual Hippocampus : Introduction to Computational Neuroscience",
     "coordinators":["Prof. Dr. Peter Jedlicka"],
     "techniques":[
-      'Computational modeling (synaptic/dendritic/single-neuron/network models)',
-        'NEURON package',
-        'Programming (Python)',
+        'Computational modeling (synaptic models)',
+        'Computational modeling (dendritic models)',
+        'Computational modeling (single-neuron models)',
+        'Computational modeling (network models)',
+        'Programming (Python, NEURON)',
         'Data analysis'
       ],
 
@@ -844,9 +848,7 @@ courses = [
     "techniques":[
         'Behavioral experiments',
         'Psychophysics',
-        'Electroencephalography (EEG)',
-        'Magnetoencephalography (MEG)',
-        'Functional magnetic resonance imaging (fMRI)',
+        'Neuroimaging (EEG, MEG, fMRI)',
         'Statistics',
         'Data analysis'
       ],
@@ -876,8 +878,10 @@ courses = [
     "coordinators":["Dr. Hermann Cuntz"],
     "techniques":[
         'Image processing (microscopy data)',
-        'Morphological modeling (treestoolbox)',
-        'Computational modeling (quantitative/biophysical models)',
+        'Computational modeling (morphological models)',
+        'Computational modeling (quantitative models)',
+        'Computational modeling (biophysical models)',
+        'Neuroanatomy',
         'Programming (Matlab)',
         'Data analysis'
       ],
@@ -908,7 +912,8 @@ courses = [
     "name":"Computational Modeling of Neuronal Plasticity",
     "coordinators":["Prof. Dr. Jochen Triesch"],
     "techniques":[
-        'Computational modeling (network models, plasticity mechanisms)',
+        'Computational modeling (network models)',
+        'Computational modeling (plasticity mechanisms)',
         'Programming (Python/Matlab/Java)',
         'Data analysis'
 
@@ -940,10 +945,12 @@ courses = [
     "name":"Computational Neural Dynamics",
     "coordinators":["Dr. Tatjana Tchumatchenko"],
     "techniques":[
-        'Mathematical modeling (single-neuron/network models)',
-        'Computational modeling (single-neuron/network models)',
-        'Analytical and numerical mathematics',
-        'Programming'
+        'Mathematical modeling (single-neuron models)',
+        'Mathematical modeling (network models)',
+        'Mathematical modeling (analytical & numerical methods)',
+        'Computational modeling (single-neuron models)',
+        'Computational modeling (network models)',
+        'Programming (Python/C/Matlab)'
       ],
 
     "topics":[
@@ -1009,9 +1016,9 @@ courses = [
         'Programming',
         'Data analysis (behavioral) ',
         'Psychophysics',
-        'Electroencephalography (EEG)',
+        'Neuroimaging (EEG, eye-tracking)',
         'Data analysis (EEG)',
-        'Eye tracking'
+
       ],
 
     "topics":[
