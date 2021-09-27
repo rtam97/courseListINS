@@ -136,6 +136,15 @@ label {
   transform: translateY(4px);
 }
 
+.excbox {
+  margin-left: 2em;
+}
+
+
+.exclusive {
+  margin: 0;
+}
+
 /* --------------------------------------------------- */
 /* ---------      SWITCH TOGGLE      ------------- */
 /* --------------------------------------------------- */
@@ -333,8 +342,8 @@ input:checked + .slider:before {
 
   font-weight: bold;
   background-color: #dbdbdb;
-  width: 90%;
-  height: 22%;
+  /* width: 90vh;
+  height: 22vh; */
   /* box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); */
 }
 

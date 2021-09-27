@@ -218,6 +218,9 @@ function extractTechniques(courseData) {
     for (var j = 0; j < courseData[i].techniques.length; j++) {
       // Extract name
       name = courseData[i].techniques[j]
+      if (name == '') {
+        break
+      }
       try {
         courseData[i].techniques[j].toLowerCase()
       } catch (e) {
@@ -373,16 +376,36 @@ function filterList() {
             if ((modz.includes(oldCourseList[i].models[k]) || modz.length == 0 )&& !newCourseList.includes(oldCourseList[i])) {
 
               // Semester check
-              if        (semester.length == 2 || oldCourseList[i].semester == 1) {
-                            testForBoth = semester.includes(oldCourseList[i].semester[0]);
-              } else if (semester.length == 1 || oldCourseList[i].semester == 2) {
-                            testForBoth = oldCourseList[i].semester.includes(semester[0]);
-              } else {
-                            testForBoth = false;
+              // if        (semester.length == 2 || oldCourseList[i].semester == 1) {
+              //               allow = semester.includes(oldCourseList[i].semester[0]);
+              // } else if (semester.length == 1 || oldCourseList[i].semester == 2) {
+              //               allow = oldCourseList[i].semester.includes(semester[0]);
+              // } else {
+              //               allow = false;
+              // }
+
+
+              allow = true;
+              if (semester.length == oldCourseList[i].semester.length && semester.length == 1 && semester[0] != 'Both') {
+                if (semester[0] != oldCourseList[i].semester[0]) {
+                  allow = false;
+                }
+              } else if (semester.length == oldCourseList[i].semester.length && semester.length == 2) {
+                allow = true
+              } else if (semester.length == 1 && semester[0] == 'Both') {
+                allow = true
+              } else if (semester.length == 3) {
+                allow = true
+              } else if (semester.length == 2 && semester.includes('Both')) {
+
+              }
+
+              else {
+                allow = false
               }
 
               // Semester filter
-              if (testForBoth || semester.length == 0) {
+              if (allow || semester.length == 0) {
 
                 if (tech.length != 0) {
                   for (var j = 0; j < oldCourseList[i].techniques.length; j++) {

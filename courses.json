@@ -1084,11 +1084,11 @@ courses = [
     "code":"EX0",
     "name":"External Course",
     "coordinators":["Professor X"],
-    "techniques":[],
+    "techniques":[''],
 
-    "topics":[],
+    "topics":[''],
 
-    "models":[],
+    "models":[''],
     "location":"Frankfurt",
     "semester":['Winter','Summer'],
     "links":[

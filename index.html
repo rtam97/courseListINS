@@ -90,7 +90,7 @@
 
             <div class="collapse" id="campusfilter">
               <li class="filter-option">
-                <input type="checkbox" id="Niederrad" name="Riedberg" value="Riedberg">
+                <input type="checkbox" id="Riedberg" name="Riedberg" value="Riedberg">
                 <label for="Riedberg">Riedberg</label>
               </li>
               <li class="filter-option">
@@ -109,17 +109,23 @@
         <div class="filter-div" id="semester-div">
           <p>
             <a onclick="toggleActive(this);" href="#semesterfilter" class="filter-title inactive" id="semesterfiltertoggle" data-toggle="collapse">Semester</a>
+            <!-- <input class="excbox" type="checkbox" id="AND" name="ANDswitch" value="off">
+            <label for="ANDswitch" class="exclusive">Exclusive</label> -->
           </p>
           <ul class="filter-list" id="semester-list">
 
             <div class="collapse" id="semesterfilter">
               <li class="filter-option">
                 <input type="checkbox" id="Winter" name="Winter" value="Winter">
-                <label for="Winter">Winter</label>
+                <label for="Winter">Winter (only)</label>
               </li>
               <li class="filter-option">
                 <input type="checkbox" id="Summer" name="Summer" value="Summer">
-                <label for="Summer">Summer</label>
+                <label for="Summer">Summer (only)</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" id="Both" name="Both" value="Both">
+                <label for="Both">Both</label>
               </li>
             </div>
 
@@ -150,11 +156,6 @@
           <button type="button" name="apply" id="apply" onclick="filterList(courses);"><span>Apply Filters</span></button>
           <button type="button" name="reset" id="reset" onclick="resetFilters();"><span>Reset Filters</span></button>
         </div>
-        <!-- <label class="switch">
-          <input type="checkbox">
-          <span class="slider round"></span>
-          <p class="switchdesc">AND selection</p>
-        </label> -->
       </div>
       <div class="courses-div">
 
