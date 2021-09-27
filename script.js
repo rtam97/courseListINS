@@ -488,29 +488,25 @@ function dragDrop(ev) {
 
   console.log('drop');
 
-
-  // Allow removal of course from slot  (dobleclick)
-  this.setAttribute('ondblclick','removeItem(this);')
-
-
   // Read dropped element data (course code)
   data = ev.dataTransfer.getData("text");
   element = document.getElementById(data)
-
-  // Edit HTML and CSS of filled slot
-  this.classList.remove('over');
-  this.classList.add('filled');
-  color = element.style.color;
-  this.style.color = color;
-  // bg = element.parentElement.style.backgroundColor;
-  // this.style.backgroundColor = bg;
-  this.innerHTML = element.innerHTML;
 
   // Find selected course from full course list
   selectedOne = courses.find(({ code }) => code === element.innerText)
 
   // Add course to selection
   selectedCourses.push(selectedOne)
+
+  // Edit HTML and CSS of filled slot
+  this.classList.remove('over');
+  this.classList.add('filled');
+  color = element.style.color;
+  this.style.color = color;
+  this.innerHTML = element.innerHTML;
+  // Allow removal of course from slot  (dobleclick)
+  this.setAttribute('ondblclick','removeItem(this);')
+
 
   // Rewrite CURRENT COURSE LIST without selection
   newCourseList = [];
@@ -563,6 +559,9 @@ function removeItem(item) {
   item.style.color = '#dbdbdb'
 }
 
+function viewSel() {
+  createCourseList(selectedCourses)
+}
 
 function addEventListeners() {
   const draggables = document.querySelectorAll('.draggable')
