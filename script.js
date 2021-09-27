@@ -568,6 +568,11 @@ function resetSel() {
     removeItem(full)
   });
 
+  document.querySelectorAll('.category').forEach((item, i) => {
+    item.value=""
+  });
+
+
 }
 
 // Save current selection to a JSON file
@@ -638,7 +643,10 @@ function loadSel() {
         // Allow removal of course from slot  (dobleclick)
         item.setAttribute('ondblclick','removeItem(this);')
 
-        selectedCourses.push(loadedList.courses[i])
+
+        selectedOne = courses.find(({ code }) => code === element.innerText)
+
+        selectedCourses.push(selectedOne)
       }
     });
 
@@ -646,27 +654,13 @@ function loadSel() {
 
     // Rewrite CURRENT COURSE LIST without selection
     newCourseList = [];
-
-    for (var i = 0; i < filteredList.length; i++) {
-      c = filteredList[i]
-
-      console.log(c.code);
-      for (var j = 0; j < selectedCourses.length; j++) {
-        console.log('\t',selectedCourses[j].code);
-
-        if (!newCourseList.includes(c)) {
-          if (selectedCourses[j].code != c.code) {
-            newCourseList.push(c)
-            console.log('\t\tadded ', c.code);
-            break;
-          } else {
-            break;
-          }
-
-        }
+    filteredList.forEach(course => {
+      if (selectedCourses.includes(course)) {
+        console.log(course.code);
+      } else {
+        newCourseList.push(course)
       }
-
-    }
+    });
 
     currentCourseList = newCourseList;
     createCourseList(currentCourseList);

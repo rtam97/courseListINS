@@ -222,7 +222,7 @@ input:checked + .slider:before {
   font-weight: bold;
   margin-top: 1%;
   padding: 1% 0 1% 0;
-  height: 12vh;
+  /* height: 12vh; */
   display: grid;
   grid-template-columns: 1fr 5fr 2fr;
   background-color: dbdbdb;
