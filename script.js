@@ -278,6 +278,9 @@ function extractModels(courseData) {
     for (var j = 0; j < courseData[i].models.length; j++) {
       // Extract name
       name = courseData[i].models[j]
+      if (name == '') {
+        break;
+      }
       try {
         courseData[i].models[j].toLowerCase()
       } catch (e) {
