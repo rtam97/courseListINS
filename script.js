@@ -175,7 +175,10 @@ function createCourseList(courseData) {
               changeColor(courseData,'#ffd591','#e08b00','#e08b00','#ffe8c4',i)
             } else if (courseData[i].code.includes('P')) {
               changeColor(courseData,'#ddffeb','#00a85c','#00a85c','#f0fff5',i)
+            } else {
+              changeColor(courseData,'#ddffeb','#00a85c','#00a85c','#f0fff5',i)
             }
+
 
 
           // FULL DESCRIPTION Collapsible div
