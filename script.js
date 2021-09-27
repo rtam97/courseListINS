@@ -1,5 +1,6 @@
 // Change the COLORS of the course elements depending on the CODE
-function changeColor(courseData,a,b,c,d,i) {
+//                               BG  ID  PROF  BGdd
+function changeColor(courseData, a,  b,  c,    d,       i) {
                     //
   // BACGROUND (a)
   x = document.getElementById(courseData[i].code)
@@ -163,21 +164,17 @@ function createCourseList(courseData) {
             courseDesc.appendChild(showfully)
 
             // Change colors depending on course type
+            //                          BG        ID        PROF      BGdd
             if (courseData[i].code.includes('A')) {
-
               changeColor(courseData,'#ffdddd','#a80000','#a80000','#fff0f0',i)
-
             } else if (courseData,courseData[i].code.includes('B')) {
-
               changeColor(courseData,'#ddebff','#00337a','#00337a','#ebf3ff',i)
-
-
             } else if (courseData[i].code.includes('C')) {
               changeColor(courseData,'#e3e3e3','#696969','#696969','#f0f0f0',i)
-
             } else if (courseData[i].code.includes('D')) {
-
               changeColor(courseData,'#ffd591','#e08b00','#e08b00','#ffe8c4',i)
+            } else if (courseData[i].code.includes('P')) {
+              changeColor(courseData,'#ddffeb','#00a85c','#00a85c','#f0fff5',i)
             }
 
 
@@ -462,31 +459,29 @@ function toggleActive(element) {
   }
 }
 
+// Drag and Drop functions
 function dragStart(ev) {
-  console.log('dragstart');
+
   ev.dataTransfer.dropEffect = "copy";
   ev.dataTransfer.setData("text", ev.target.id);
 
 }
-
 function dragEnter() {
-  console.log('dragenter');
+
+
   this.classList.add('over');
 }
-
 function dragLeave() {
-  console.log('dragleave');
+
+
   this.classList.remove('over');
 }
-
 function dragOver(ev) {
-  console.log('dragover');
+
+
   ev.preventDefault();
 }
-
 function dragDrop(ev) {
-
-  console.log('drop');
 
   // Read dropped element data (course code)
   data = ev.dataTransfer.getData("text");
@@ -522,6 +517,7 @@ function dragDrop(ev) {
 
 }
 
+// Remove course from selection grid
 function removeItem(item) {
 
   returnCourse = courses.find(({ code }) => code === item.innerText)
@@ -559,9 +555,169 @@ function removeItem(item) {
   item.style.color = '#dbdbdb'
 }
 
+// Filter courses to inculde only the SELECTED ones
+// Overrides any active filter
 function viewSel() {
   createCourseList(selectedCourses)
 }
+
+// Removes all courses from selection and resets course list
+function resetSel() {
+  document.querySelectorAll('.filled').forEach((full, i) => {
+    console.log(full);
+    removeItem(full)
+  });
+
+}
+
+// Save current selection to a JSON file
+function saveSel() {
+
+
+  // Create structure of OBJECT TO BE SAVED
+  saveObject = {
+    'catname1' : '',
+    'catname2' : '',
+    'catname3' : '',
+    'courses' : []
+  };
+
+  document.querySelectorAll('.slot').forEach((item, i) => {
+    if (item.classList.contains('filled')) {
+      curCourse = courses.find(({ code }) => code === item.innerText)
+    } else {
+      curCourse = {}
+    }
+    saveObject.courses.push(curCourse)
+  });
+
+
+  document.querySelectorAll('.category').forEach((item, i) => {
+
+    if (item.value == '') {
+      catname = item.placeholder
+    } else {
+      catname = item.value
+    }
+
+    switch (i) {
+      case 0:
+        saveObject.catname1 = catname
+        break;
+      case 1:
+        saveObject.catname2 = catname
+        break;
+      case 2:
+        saveObject.catname3 = catname
+        break;
+
+    }
+
+  });
+
+  saveJSON = JSON.stringify(saveObject)
+
+  saveFileFunction(saveJSON)
+  console.log(saveJSON);
+}
+
+// Put loaded JSON data of SELECTED COURSES into selection grid
+function loadSel() {
+    document.querySelectorAll('.slot').forEach((item, i) => {
+      console.log(item)
+      console.log(loadedList.courses[i]);
+
+      element = document.getElementById('code'+loadedList.courses[i].code)
+
+      if (element != null) {
+        // Edit HTML and CSS of filled slot
+        item.classList.add('filled');
+        color = element.style.color;
+        item.style.color = color;
+        item.innerHTML = loadedList.courses[i].code;
+        // Allow removal of course from slot  (dobleclick)
+        item.setAttribute('ondblclick','removeItem(this);')
+
+        selectedCourses.push(loadedList.courses[i])
+      }
+    });
+
+    resetFilters();
+
+    // Rewrite CURRENT COURSE LIST without selection
+    newCourseList = [];
+
+    for (var i = 0; i < filteredList.length; i++) {
+      c = filteredList[i]
+
+      console.log(c.code);
+      for (var j = 0; j < selectedCourses.length; j++) {
+        console.log('\t',selectedCourses[j].code);
+
+        if (!newCourseList.includes(c)) {
+          if (selectedCourses[j].code != c.code) {
+            newCourseList.push(c)
+            console.log('\t\tadded ', c.code);
+            break;
+          } else {
+            break;
+          }
+
+        }
+      }
+
+    }
+
+    currentCourseList = newCourseList;
+    createCourseList(currentCourseList);
+
+
+}
+
+// Load JSON file
+function loadFileFunction() {
+  var element = document.createElement('div');
+  element.innerHTML = '<input type="file">';
+  var fileInput = element.firstChild;
+
+  fileInput.addEventListener('change', function() {
+      var file = fileInput.files[0];
+
+      if (file.name.match(/\.(txt|json)$/)) {
+          var reader = new FileReader();
+
+          reader.onload = function() {
+              loadedList = JSON.parse(reader.result);
+              loadSel();
+          };
+          reader.readAsText(file);
+      } else {
+          alert("File not supported, .txt or .json files only");
+      }
+  });
+  fileInput.click();
+}
+
+function saveFileFunction(data) {
+        // Convert the text to BLOB.
+        const jsonToBlob = new Blob([data], { type: 'application/json' });
+        const sFileName = 'selectionfile.json';	   // The file to save the data.
+
+        let newLink = document.createElement("a");
+        newLink.download = sFileName;
+
+        if (window.webkitURL != null) {
+            newLink.href = window.webkitURL.createObjectURL(jsonToBlob);
+        }
+        else {
+            newLink.href = window.URL.createObjectURL(jsonToBlob);
+            newLink.style.display = "none";
+            document.body.appendChild(newLink);
+        }
+
+        newLink.click();
+}
+
 
 function addEventListeners() {
   const draggables = document.querySelectorAll('.draggable')
@@ -586,6 +742,8 @@ function addEventListeners() {
 filteredList = courses;
 selectedCourses = [];
 currentCourseList = courses;
+
+viewingSelection = false;
 
 createCourseList(currentCourseList);
 

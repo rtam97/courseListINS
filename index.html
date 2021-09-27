@@ -20,7 +20,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -46,7 +45,7 @@
         <h3>Courses</h3>
       </div>
       <div class="semesterstitle">
-        <h3>Semesters</h3>
+        <h3>Selection</h3>
       </div>
 
       <div class="filters-div">
@@ -163,17 +162,12 @@
       </div>
       <div class="semesters-div">
         <div class="semester-boxes">
-          <div class="sem-boxx" id="winter1">
-            <!-- Winter 1
-            <ul class="diocane">
-              <li>Basic Methods in Neuroscience</li>
-              <li>Neuroscience I</li>
-              <li>Other stuff (Seminars etc.)</li>
-            </ul> -->
-            <button class="viewsel" type="button" onclick="viewSel();">View Selected</button>
+          <div class="buttons-selection-div" id="winter1">
+            <button class="viewsel" type="button" onclick="viewSel();">View Selection</button>
+            <button class="resetsel" type="button" onclick="resetSel();">Reset Selection</button>
           </div>
           <div class="sem-box dropzone" id="winter2">
-            Winter 2
+            <input type="text" class="category" placeholder="Category 1" >
             <div class="slots-div" id="winter2slots">
                 <div class="slot" id="slot1">
                   1st choiche
@@ -201,15 +195,20 @@
                 </div>
                 <div class="slot" id="slot5">
                   5th choiche
+                  <div class="slot-content">
+                    <h3 class="choice" id="c3w2"></h3>
+                  </div>
+                </div>
+                <div class="slot" id="slot6">
+                  6th choiche
                   <div class="slot-content">
                     <h3 class="choice" id="c3w2"></h3>
                   </div>
                 </div>
             </div>
-            <p class="instructions" id="inst1">Double click to remove course</p>
           </div>
           <div class="sem-box dropzone" id="summer1">
-            Summer 1
+            <input type="text" class="category" placeholder="Category 2" >
             <div class="slots-div" id="winter2slots">
                 <div class="slot" id="slot1">
                   1st choiche
@@ -237,6 +236,12 @@
                 </div>
                 <div class="slot" id="slot5">
                   5th choiche
+                  <div class="slot-content">
+                    <h3 class="choice" id="c3w2"></h3>
+                  </div>
+                </div>
+                <div class="slot" id="slot6">
+                  6th choiche
                   <div class="slot-content">
                     <h3 class="choice" id="c3w2"></h3>
                   </div>
@@ -244,7 +249,7 @@
             </div>
           </div>
           <div class="sem-box dropzone" id="summer2">
-            Summer 2
+            <input type="text" class="category" placeholder="Category 3" >
             <div class="slots-div" id="winter2slots">
                 <div class="slot" id="slot1">
                   1st choiche
@@ -276,9 +281,18 @@
                     <h3 class="choice" id="c3w2"></h3>
                   </div>
                 </div>
+                <div class="slot" id="slot6">
+                  6th choiche
+                  <div class="slot-content">
+                    <h3 class="choice" id="c3w2"></h3>
+                  </div>
+                </div>
             </div>
           </div>
-
+          <div class="loadsave-selection-div" id="loadsave">
+            <button class="savesel" type="button" onclick="saveSel();">Save Selection</button>
+            <button class="loadsel" type="button" onclick="loadFileFunction();">Load Selection</button>
+          </div>
         </div>
 
       </div>

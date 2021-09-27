@@ -354,11 +354,11 @@ courses = [
         'Genetic techniques (mice)',
         'Immunohistochemistry',
         'Cell culture (neuronal/endothelial)',
-        'Microscopy (immunofluorescence, confocal)',
-        'Biochemistry (electrophoresis, blotting)',
+        'Microscopy (confocal)',
+        'Biochemistry',
         'Genetic techniques (zebrafish)',
-        'Microscopy (epifluorescence/stereo)',
-        'Molecular biology (embryo manipulation)',
+        'Microscopy (stereo)',
+        'Molecular biology',
         'Behavioral experiments',
         'Data analysis'
       ],
@@ -1076,6 +1076,41 @@ courses = [
     "content":"The module consists of a seminar, an internship and excursion. Fundamental aspects and current issues of Zoology are taught in the seminar at the beginning based on original work, which will be presented by the students and then discussed as a group. The excursion to various zoos and a research internship in the 'Opel Zoo' serve to solidify theoretical principles. The focus will be on ecological, physiological and ethological research. Other topics include: historical development of zoos, zoos & conservation, population biology & breeding programs at the zoo, animal husbandry (nutrition, behaviour, enrichment, mixed species exhibits), veterinary fundamentals, organization and structural development, enclosure design and planning, education at the Zoo. The methodological approach to the practical components depends on the selected research focus, with classical to modern methods of behaviour research available. They may include laboratory activities (microscopic and physiological studies) and imaging techniques (such as thermographic measurements with infrared cameras or video analysis with high-speed cameras). The students present their results at the end of the module in the form of an oral presentation. In a further lecture they learn to critically appraise original work at the 'Opel Zoo'. These presentations will be held in English and students are given detailed feedback in terms of content and structure. By drafting a protocol in the form of a paper they become acquainted with the writing of a scientific publication. Following a detailed briefing on the methodology, planning, implementation, logging and analysis of the original data will be completed by the students independently."
     ,
     "objectives":"The students acquire basic principles in the field of zoo biology (behaviour research in the zoo, enrichment, husbandry, conservation aspects), as well as the application of modern imaging techniques. You will learn methodology for the implementation of behavioural studies and how to address scientific problems while bearing in mind current concepts in the relevant literature."
+
+  }
+
+  ,
+
+  {
+    "code":"P18",
+    "name":"Three-Dimensional Developmental Biology and Three-Dimensional Microscopy",
+    "coordinators":["Prof. Dr. E.H.K. Stelzer"],
+    "techniques":[
+        'Animal handling (cultivation, sample-prep)',
+        'Microscopy (light-sheet, 3D, live, long-term)',
+        'Image processing (microscopy data)'
+      ],
+
+    "topics":[
+      'Developmental biology',
+      'Insect model organisms',
+      'Optics',
+      'Photometry',
+      'Confocal vs. light-sheet microscopy'
+    ],
+
+    "models":[
+      'Red flour beetle (Tribolium castaneum)'
+    ],
+    "location":"Riedberg",
+    "semester":['Winter','Summer'],
+    "links":[
+      'https://www.physikalischebiologie.de/people/ernst-hk-stelzer',
+      'https://www.physikalischebiologie.de/'
+    ],
+    "content":"This internship teaches state-of-the-art three-dimensional fluorescence microscopy and respective non-invasive sample mounting techniques. All steps are shown exemplarily in the investigation of insect embryogenesis. For more than a century, insect research has contributed significantly to genetics and developmental biology. The most prominent model organism is the common fruit fly/vinegar fly Drosophila melanogaster. However, over the last years it became apparent that focusing on a few established model organisms is not sufficient to understand the basic principles of insect development in detail. New insect species (emerging model organisms) are established in many laboratories to gain new insights into neglected or even unknown processes. For example, the red flour beetle Tribolium castaneum is used since its embryogenesis deviates substantially from that of Drosophila in many different aspects. Instead of wide field or confocal fluorescence microscopy, we use light sheet-based fluorescence microscopy, which allows us to image individuals for one week. Moreover, the imaged individual survives the procedure. Students will work on current research projects and are supervised by experienced members of the Stelzer group. They present their results in an oral presentation and a written internship report."
+    ,
+    "objectives":"The student learns the principles of insect model organisms, such as Tribolium castaneum, in developmental biology. He or she is aware of current scientific questions in developmental biology and knows how to handle transgenic organisms. He or she understands the principles of optics in classical microscopy (characteristics of light, resolution, numerical aperture) as well as photometry (energy, power). The student knows the differences between confocal and light sheet-based fluorescence microscopy and is be able to estimate the limits of classical light microscopy in dense tissues. He or she understands laboratory cultivation of Tribolium as well as preparation methods for confocal and light sheet-based fluorescence microscopes, in the context of long-term live imaging of Tribolium embryos in toto. The student analyses the data and understands the basics of scientific image processing and the embryonic development of Tribolium. The interns work under guidance on their own individual project based on the actual research topics of the Stelzer group. At the end of the course, they summarize their results and findings in a protocol and prepare a seminar under the guidance of their advisor."
 
   }
 
