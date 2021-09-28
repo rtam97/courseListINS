@@ -387,24 +387,24 @@ function filterList() {
               //               allow = false;
               // }
 
-
-              allow = true;
+              allow = false;
               if (semester.length == oldCourseList[i].semester.length && semester.length == 1 && semester[0] != 'Both') {
-                if (semester[0] != oldCourseList[i].semester[0]) {
-                  allow = false;
+                if (semester[0] == oldCourseList[i].semester[0]) {
+                  allow = true;
                 }
-              } else if (semester.length == oldCourseList[i].semester.length && semester.length == 2) {
-                allow = true
-              } else if (semester.length == 1 && semester[0] == 'Both') {
-                allow = true
-              } else if (semester.length == 3) {
-                allow = true
-              } else if (semester.length == 2 && semester.includes('Both')) {
+              }
+              else if ((semester.length != oldCourseList[i].semester.length && semester.length == 2) || (semester.length == oldCourseList[i].semester.length && semester.length == 2) && semester.includes('Both')) {
+                oldCourseList[i].semester.forEach((item, i) => {
+                  if (semester[0] == item) {
+                    allow = true;
+                  }
+                });
 
               }
-
-              else {
-                allow = false
+               else if (semester.length != oldCourseList[i].semester.length && semester.length == 1 && oldCourseList[i].semester.length == 2 && semester[0] == 'Both') {
+                allow = true;
+              } else if (semester.length != oldCourseList[i].semester.length && semester.length == 2 && oldCourseList[i].semester.length == 1 && !semester.includes('Both')) {
+                allow = true;
               }
 
               // Semester filter
@@ -475,6 +475,7 @@ function resetFilters() {
   });
   currentCourseList = newCourseList;
   createCourseList(currentCourseList);
+
 }
 
 // Activate/deactivate filter category dropdown arrow

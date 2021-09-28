@@ -616,7 +616,7 @@ courses = [
     "techniques":[
         'Clinical evaluation (Developmental neurological)',
         'Clinical evaluation (Neuropsychological)',
-        'Neuroimaging (EEG, Evoked-potentials)',
+        'Neurophysiology (EEG, Evoked-potentials)',
         'Neuroimaging (Neurography)',
         'Neuroimaging (Sonography)'
       ],
@@ -717,7 +717,8 @@ courses = [
         'Microscopy',
         'Pharmacology',
         'Behavioral experiments',
-        'Neuroimaging (EEG, MEG, fMRI, DEMO)'
+        'Neurophysiology (EEG, MEG, DEMO)',
+        'Neuroimaging (fMRI, DEMO)'
       ],
 
     "topics":[
@@ -848,7 +849,8 @@ courses = [
     "techniques":[
         'Behavioral experiments',
         'Psychophysics',
-        'Neuroimaging (EEG, MEG, fMRI)',
+        'Neurophysiology (EEG, MEG)',
+        'Neuroimaging (fMRI)',
         'Statistics',
         'Data analysis'
       ],
@@ -1016,7 +1018,7 @@ courses = [
         'Programming',
         'Data analysis (behavioral) ',
         'Psychophysics',
-        'Neuroimaging (EEG, eye-tracking)',
+        'Neurophysiology (EEG, eye-tracking)',
         'Data analysis (EEG)',
 
       ],
