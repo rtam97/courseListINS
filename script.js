@@ -408,7 +408,7 @@ function filterList() {
               }
 
               // Semester filter
-              if (allow || semester.length == 0) {
+              if (allow || semester.length == 0 || semester.length == 3) {
 
                 if (tech.length != 0) {
                   for (var j = 0; j < oldCourseList[i].techniques.length; j++) {
