@@ -483,34 +483,36 @@ courses = [
   },
 
   {
-    "code":"B1",
-    "name":"Ageing and Neurodegeneration",
-    "coordinators":["Prof. Georg Auburger"],
+    "code":"A25",
+    "name":"Neuroscience of Navigation and Self-Motion",
+    "coordinators":["Dr. Jean Laurens "],
     "techniques":[
-        'Disease models (in vivo, Parkinson\'s/Ataxia)',
-        'Clinical evaluation (Motor/behavioral analysis)',
-        'Clinical evaluation (Disease progression analysis)',
-        'Data analysis',
-        'Genetic techniques',
-        'Molecular biology',
-        'Histology'
+        'Chronic electrode implantation',
+        '3D motion tracking',
+        'Electrophysiology (data analysis)',
+        'Computational modelling (Bayesian)',
+        'Mathematical modelling (Bayesian)',
+        'Data analysis'
       ],
 
     "topics":[
-      'Parkinson\'s disease',
-      'Ataxia'
+      'Navigation',
+      'Self-motion sensation',
+      'Cerebellar physiology',
+      'Bayesian modeling'
     ],
     "models":[
-      'Mice (Mus musculus)'
+      'Marmoset monkey'
     ],
     "location":"Niederrad",
     "semester":['Winter','Summer'],
     "links":[
-      'https://www.izn-frankfurt.de/en/mitglied/auburger/'
+      'https://www.esi-frankfurt.de/people/jeanlaurens/',
+      'https://www.esi-frankfurt.de/research/laurens-lab/'
     ],
-    "content":"The practical course introduces basic analysis techniques for mouse models of the neurodegenerative diseases Parkinson’s and ataxia. The students are trained in objective methods to measure motor and behaviour patterns (Offenfeld, Rotarod, etc.), statistical evaluation for progression analyses (ANOVA, Regression, etc.) as well as molecular genetic mutation tests (tail biopsy, DNA extraction, quantitative PCR) and analysing the expression profile of mutated tissue. They work on current projects under supervision, report on up to date science in a Journal Club, and present the experimental results in the form of a seminar talk. They learn how to present scientific work through writing up a result protocol."
+    "content":"We interact with the world by moving and navigating through it, whenever we go to our kitchen or explore a new shopping mall; and whenever we drive a car or climb a mountain trail. Labour group studies the brain circuits responsible for sensing our own body’s motion, controlling balance, and finding one’s way through the word. We perform neuronal recordings in small squirrel-sized monkeys, the Marmosets, in experiments where they can be seated in moving platforms or move freely in natural cages. We are also a computational lab where we develop models of self-motion sensation, based in particular on the Bayesian formalism. A tour in the lab will allow you to learn about the techniques of extracellular recordings and neuronal data analysis, about motion and navigation science, and about theoretical and systems neuroscience. The students will discuss with Dr. Laurens to define a research in project in one of the lab’s thematic: navigation (head direction cells system), selfmotion (vestibular system), cerebellar physiology, Bayesian modeling."
     ,
-    "objectives":"Basic knowledge about designing and carrying out motor-behaviour analyses in rodents as well as statistical evaluation. Learning methods in cell biology (fibroblasts/cell culture, transfection), molecular genetics/biology (quantitative PCR, Western blots), histological methods, learning to work on scientific questions based on relevant publications."
+    "objectives":"In this elective module the students will get exposed to the techniques of system neuroscience: design and operation of chronic implants; analysis of neuronal spiking data and LFP; 3D motion tracking and analysis, programming of robotic platforms. They will also learn about one of the lab’s scientific fields: navigation, selfmotion sensation, cerebellar physiology, Bayesian modeling. Note that direction participation to experiments with monkeys is not possible since the mandatory training typically takes longer than 4 months to complete. The students are in an international environment, they write and communicate their results in English."
   },
 
   {
@@ -616,7 +618,7 @@ courses = [
     "techniques":[
         'Clinical evaluation (Developmental neurological)',
         'Clinical evaluation (Neuropsychological)',
-        'Neurophysiology (EEG, Evoked-potentials)',
+        'Electrophysiology (EEG, Evoked-potentials)',
         'Neuroimaging (Neurography)',
         'Neuroimaging (Sonography)'
       ],
@@ -717,7 +719,7 @@ courses = [
         'Microscopy',
         'Pharmacology',
         'Behavioral experiments',
-        'Neurophysiology (EEG, MEG, DEMO)',
+        'Electrophysiology (EEG, MEG, DEMO)',
         'Neuroimaging (fMRI, DEMO)'
       ],
 
@@ -849,7 +851,7 @@ courses = [
     "techniques":[
         'Behavioral experiments',
         'Psychophysics',
-        'Neurophysiology (EEG, MEG)',
+        'Electrophysiology (EEG, MEG)',
         'Neuroimaging (fMRI)',
         'Statistics',
         'Data analysis'
@@ -1018,7 +1020,7 @@ courses = [
         'Programming',
         'Data analysis (behavioral) ',
         'Psychophysics',
-        'Neurophysiology (EEG, eye-tracking)',
+        'Electrophysiology (EEG, eye-tracking)',
         'Data analysis (EEG)',
 
       ],
@@ -1030,7 +1032,7 @@ courses = [
     ],
 
     "models":[
-      'Computer'
+      'Humans (Homo sapiens)'
     ],
     "location":"Westend",
     "semester":['Winter'],
@@ -1041,6 +1043,43 @@ courses = [
     "content":"This practical course provides an introduction to conducting research in Human Cognitive Science also known as Cognitive Psychology. In particular, students taking part will be able to gather hands-on experience in designing, programming, executing and analysing experiments in the areas of visual attention, scene perception, and memory. Depending on currently ongoing projects in the “Scene Grammar Lab”, the students can participate in neurocognitive studies using techniques such as EEG, eye tracking (both stationary and mobile ET glasses), and/or psychophysics. At the end of this practical course the students will have learned about the theoretical background of the projects, as well as data acquisition, data analysis, and interpretation of results. While we expect the students to work independently, the various members of the lab will be there to help where possible. As part of our weekly lab colloquium, students will be able to learn about other ongoing projects and will have the opportunity to present their work in this informal setting. At the end of the course, students are expected to write a brief paper (intro, methods, results, discussion) on the study they were working on."
     ,
     "objectives":"Reading up on theoretical backgrounds in the field of attention, perception, and memory, learning methods of experimental psychology, basics of acquisition and analysis of (neuro-)cognitive data, performing basic statistical analyses and writing a scientific paper."
+
+  },
+
+
+  {
+    "code":"C15",
+    "name":"Developmental Cognitive Neuroscience",
+    "coordinators":["Prof. Dr. Yee Lee Shing"],
+    "techniques":[
+        'Study design',
+        'Programming (Matlab/Python/R)',
+        'Behavioral experiments',
+        'Neuroimaging (fMRI)',
+        'Data analysis (behavioral) ',
+        'Data analysis (fMRI)',
+        'Computational modeling'
+
+      ],
+
+    "topics":[
+      'Lifespan cognitive development and brain plasticity',
+      'Learning & Memory',
+      'Environmental effects on development',
+    ],
+
+    "models":[
+      'Humans (Homo sapiens)'
+    ],
+    "location":"Westend",
+    "semester":['Winter','Summer'],
+    "links":[
+      'https://www.izn-frankfurt.de/en/mitglied/shing/',
+      'https://www.psychologie.uni-frankfurt.de/69824239/005_Prof_-Yee-Lee-Shing'
+    ],
+    "content":"Our brain is highly plastic and undergoes dynamic changes across the lifespan. These developmental changes are reflected in modifications of cognitive functions, such as learning and memory. In our lab, we are interested in how the human brain and cognitive systems develop throughout the lifespan, particularly in how age-related neurocognitive changes influence the way we learn and extract regularities from the environment and our ability to create memories of unique experiences. For this, we conduct experiments in which we test participants of different age groups, using cognitive tasks designed to tap into specific processes involved in learning and memory. Depending on the stage of the experiment that you will work on, you may get experience in programming cognitive tasks, Matlab/Python/R programming, processing of behavioural/neuroimaging data, and/or conducting statistical/computational model analyses."
+    ,
+    "objectives":"In this elective module the students will get exposed to several techniques used to collect human experimental data: cognitive tasks to collect participants’ behavioural data, neuroimaging data while participants are performing tasks, and/or computational modeling of participants’ data. In addition, the students will learn how to design and program cognitive tasks, and they will learn different methods for analyze data, which will require them to learn Matlab/Python/R programming. The students will work in an international environment and learn how to write and communicate their results in English."
 
   },
 
