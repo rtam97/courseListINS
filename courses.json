@@ -3,30 +3,6 @@
 courses = [
 
   {
-    "code":"A5",
-    "name":"Clock Mechanisms in Mammalian Neurons and Neuroendocrine Cells",
-    "coordinators":["Prof. Eric Maronde"],
-    "techniques":[
-      'Molecular biology',
-      'Biochemistry',
-      'Cell culture',
-      'Immunohistochemistry',
-      'Neuroanatomy'
-    ],
-    "topics":[
-      'Circadian rhythms in mammalian neurons'
-    ],
-    "models":[
-      'Mice (Mus musculus)'
-    ],
-    "location":"Niederrad",
-    "semester":['Summer'],
-    "links":['https://www.izn-frankfurt.de/en/mitglied/maronde/'],
-    "content":"The practical presents the basics of generating endogenous circadian rhythms in mammalian neurons. Here, the students analyze the cellular and molecular elements for chronobiological behaviour, working under supervision, and write up the results. Then the results obtained are presented in the form of a seminar talk. In a further seminar talk they present original research from the area of chrononeurobiology. The following techniques will be introduced: immunohistochemistry, protein gel electrophoresis, RNA extraction, RT-PCR, densitometry.",
-    "objectives":"Basic knowledge about cell and molecular biology, basic skills in neuroanatomy of the mammalian brain, basics in chronobiological systems biology, learning to work on scientific questions based on relevant publications."
-  },
-
-  {
     "code":"A7",
     "name":"Neurobiology of the Nematode Caenorhabditis elegans",
     "coordinators":["Prof. Alexander Gottschalk"],
